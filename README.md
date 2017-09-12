@@ -16,7 +16,7 @@ git clone https://github.com/nightsense/nightshell ~/.nightshell
 
 (Or you could always [download the repository manually](https://github.com/nightsense/nightshell/archive/master.zip) and unzip the contents to directory `~/.nightshell`.)
 
-Once installed, you can view a list of available themes by running `ls ~/.nightshell/themes | grep -v README`.
+Once installed, you can view a list of available themes by running `ls ~/.nightshell | grep -v README`.
 
 ### step 2 - shell configuration
 
