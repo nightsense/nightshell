@@ -1,6 +1,6 @@
 # nightshell
 
-**nightshell** is a collection of scripts for setting the shell colourscheme to any nightsense-designed theme, namely:
+A collection of scripts for setting the **shell theme** to any nightsense-designed colourscheme, namely:
 
 - [carbonized](https://github.com/nightsense/carbonized) (`carbonized-light` • `carbonized-dark`)
 
@@ -14,9 +14,9 @@ Install nightshell by cloning this repository:
 git clone https://github.com/nightsense/nightshell ~/.nightshell
 ```
 
-(Or you could always [download the repository](https://github.com/nightsense/nightshell/archive/master.zip) manually and unzip the contents to directory `~/.nightshell`.)
+(Or you could always [download the repository manually](https://github.com/nightsense/nightshell/archive/master.zip) and unzip the contents to directory `~/.nightshell`.)
 
-Once installed, you can view a list of available themes by running `ls ~/.nightshell/themes`.
+Once installed, you can view a list of available themes by running `ls ~/.nightshell/themes | grep -v README`.
 
 ### step 2 - shell configuration
 
