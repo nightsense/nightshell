@@ -30,21 +30,21 @@ sh ~/.nightshell/THEME
 
 ...replacing `THEME` with the desired colourscheme (e.g. `sh ~/.nightshell/carbonized-light`).
 
-> On macOS, you can add this line to `~/.bash_profile`.
+> On macOS, where `~/.bashrc` is not sourced automatically, you can add this line to `~/.bash_profile` instead.
 
 #### fish
 
 Add the following to `~/.config/fish/config.fish`...
 
 ```
-sh ~/.nightshell/themes/THEME
+sh ~/.nightshell/THEME
 ```
 
-...replacing `THEME` with the desired colourscheme (e.g. `sh ~/.nightshell/themes/carbonized-light`).
+...replacing `THEME` with the desired colourscheme (e.g. `sh ~/.nightshell/carbonized-light`).
 
 ### step 3 - vim configuration
 
-To use a nightsense theme in **terminal vim**, add the following to `~/.vimrc`:
+To use a nightsense theme in **terminal vim**, add the following to `~/.vimrc`...
 
 ```
 colorscheme THEME
