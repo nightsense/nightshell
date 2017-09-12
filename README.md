@@ -1,6 +1,6 @@
 # nightshell
 
-A collection of scripts for setting the **shell theme** to any nightsense-designed colourscheme, namely:
+A collection of scripts for setting the **shell theme** to any **nightsense colourscheme**, namely:
 
 - [carbonized](https://github.com/nightsense/carbonized) (`carbonized-light` • `carbonized-dark`)
 
