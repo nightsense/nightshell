@@ -1,6 +1,6 @@
 # nightshell
 
-A collection of scripts for setting the **shell theme** to any **nightsense colourscheme**, namely:
+Scripts for setting the **shell theme** to any of the following:
 
 - [carbonized](https://github.com/nightsense/carbonized) (`carbonized-light` • `carbonized-dark`)
 
@@ -8,13 +8,13 @@ A collection of scripts for setting the **shell theme** to any **nightsense colo
 
 ### step 1 - installation
 
-Install nightshell by cloning this repository:
+Install nightshell by cloning this repository to `~/.nightshell`:
 
 ```
 git clone https://github.com/nightsense/nightshell ~/.nightshell
 ```
 
-(Or you could always [download the repository manually](https://github.com/nightsense/nightshell/archive/master.zip) and unzip the contents to directory `~/.nightshell`.)
+(Or if you prefer, [download the repository manually](https://github.com/nightsense/nightshell/archive/master.zip) and unzip the contents to directory `~/.nightshell`.)
 
 Once installed, you can view a list of available themes by running `ls ~/.nightshell | grep -v README`.
 
@@ -25,7 +25,7 @@ Once installed, you can view a list of available themes by running `ls ~/.nights
 Add the following to `~/.bashrc` or `~/.zshrc`...
 
 ```
-sh ~/.nightshell/THEME
+[ -n "$PS1" ] && sh ~/.nightshell/THEME
 ```
 
 ...replacing `THEME` with the desired colourscheme (e.g. `sh ~/.nightshell/carbonized-light`).
@@ -37,7 +37,9 @@ sh ~/.nightshell/THEME
 Add the following to `~/.config/fish/config.fish`...
 
 ```
-sh ~/.nightshell/THEME
+if status --is-interactive
+  sh ~/.nightshell/THEME
+end
 ```
 
 ...replacing `THEME` with the desired colourscheme (e.g. `sh ~/.nightshell/carbonized-light`).
