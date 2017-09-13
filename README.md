@@ -1,8 +1,10 @@
 # nightshell
 
-Scripts for setting the **shell theme** to any of the following:
+Scripts for setting the **terminal theme** to any of the following:
 
 - [carbonized](https://github.com/nightsense/carbonized) (`carbonized-light` • `carbonized-dark`)
+
+nightshell can be used with various terminal applications, including **GNOME Terminal**, **urxvt**, and **xterm**. If vim is configured to use the same theme, **terminal vim** will display the colours properly.
 
 ## usage
 
