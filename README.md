@@ -47,7 +47,7 @@ if status --is-interactive; sh ~/.nightshell/THEME; end
 
 ### step 3 - terminal vim
 
-Once you've installed this repository (step 1), your nightsense-designed theme will work properly in terminal vim (provided the terminal application is compatible).
+Once you've installed this repository (step 1), your nightsense-designed vim theme will work properly in terminal vim (provided the terminal application is compatible).
 
 However, if **different themes** are used in the terminal and vim, the vim theme will persist in the terminal after vim is closed. In order to restore the terminal theme upon exiting vim, you can wrap the `vim` command in a shell function.
 
@@ -59,7 +59,7 @@ Add the following to `~/.bashrc` or `~/.zshrc`...
 vim(){ sh -c "vim $*" && sh ~/.nightshell/carbonized-light && clear; }
 ```
 
-...replacing `THEME` with the desired colourscheme (e.g. `sh ~/.nightshell/carbonized-light`).
+...replacing `THEME` with the desired colourscheme (e.g. `sh ~/.nightshell/THEME`).
 
 #### fish
 
