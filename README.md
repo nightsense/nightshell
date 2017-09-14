@@ -18,9 +18,11 @@ Install nightshell by cloning this repository to `~/.nightshell`:
 git clone https://github.com/nightsense/nightshell ~/.nightshell
 ```
 
-(Or if you prefer, [download the repository manually](https://github.com/nightsense/nightshell/archive/master.zip) and unzip the contents to directory `~/.nightshell`.)
+When updates are made to this repository, you can upgrade nightshell by navigating to `~/.nightshell` and running `git pull`.
 
-Once installed, you can view a list of available themes by running `ls ~/.nightshell | grep -v README`.
+> Alternatively, you can install nightshell by [downloading this repository manually](https://github.com/nightsense/nightshell/archive/master.zip) and unzipping the contents to directory `~/.nightshell`.
+
+With nightshell installed, a list of available themes can be generated with `ls ~/.nightshell | grep -v README`.
 
 ### step 2 - shell configuration
 
