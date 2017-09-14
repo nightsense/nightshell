@@ -1,6 +1,6 @@
 # nightshell
 
-**Terminal theme setter** for the nightsense-designed themes. Namely:
+**Terminal theme setter** for nightsense-designed themes. Namely:
 
 - [carbonized](https://github.com/nightsense/carbonized) (`carbonized-light` • `carbonized-dark`)
 
@@ -33,7 +33,7 @@ Add the following to `~/.bashrc` or `~/.zshrc`...
 
 ...replacing `THEME` with the desired colourscheme (e.g. `sh ~/.nightshell/carbonized-light`).
 
-> On macOS, where `~/.bashrc` is not sourced automatically, you can add this line to `~/.bash_profile` instead.
+> On [macOS](http://hayne.net/MacDev/Notes/unixFAQ.html#shellStartup), where `~/.bashrc` is not sourced automatically, you can add this line to `~/.bash_profile` instead.
 
 #### fish
 
