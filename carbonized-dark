@@ -2,7 +2,7 @@
 
 # This script doesn't support linux console (use 'vconsole' template instead)
 if [ "${TERM%%-*}" = 'linux' ]; then
-    return 2>/dev/null || exit 0
+  return 2>/dev/null || exit 0
 fi
 
 color00="1f/1f/1f" # Base 00 - Black
@@ -12,7 +12,7 @@ color03="ab/98/2b" # Base 0A - Yellow
 color04="63/93/ab" # Base 0D - Blue
 color05="85/72/ab" # Base 0E - Magenta
 color06="3e/94/86" # Base 0C - Cyan
-color07="ab/a6/9d" # Base 05 - White
+color07="bf/ba/b0" # Base 05 - White
 color08="6b/68/63" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
@@ -26,8 +26,8 @@ color17="ab/72/98" # Base 0F
 color18="36/36/36" # Base 01
 color19="54/52/4d" # Base 02
 color20="9e/9a/91" # Base 04
-color21="e8/e2/d5" # Base 06
-color_foreground="ab/a6/9d" # Base 05
+color21="e0/da/cf" # Base 06
+color_foreground="bf/ba/b0" # Base 05
 color_background="1f/1f/1f" # Base 00
 
 if [ -n "$TMUX" ]; then
@@ -76,12 +76,12 @@ printf $printf_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  printf $printf_template_custom Pg aba69d # foreground
+  printf $printf_template_custom Pg bfbab0 # foreground
   printf $printf_template_custom Ph 1f1f1f # background
-  printf $printf_template_custom Pi aba69d # bold color
+  printf $printf_template_custom Pi bfbab0 # bold color
   printf $printf_template_custom Pj 54524d # selection color
-  printf $printf_template_custom Pk aba69d # selected text color
-  printf $printf_template_custom Pl aba69d # cursor
+  printf $printf_template_custom Pk bfbab0 # selected text color
+  printf $printf_template_custom Pl bfbab0 # cursor
   printf $printf_template_custom Pm 1f1f1f # cursor text
 else
   printf $printf_template_var 10 $color_foreground
