@@ -56,10 +56,10 @@ However, if **different themes** are used in the terminal and vim, the vim theme
 Add the following to `~/.bashrc` or `~/.zshrc`...
 
 ```
-vim(){ sh -c "vim $*" && sh ~/.nightshell/carbonized-light && clear; }
+vim(){ sh -c "vim $*" && sh ~/.nightshell/THEME && clear; }
 ```
 
-...replacing `THEME` with the desired colourscheme (e.g. `sh ~/.nightshell/THEME`).
+...replacing `THEME` with the desired colourscheme (e.g. `sh ~/.nightshell/carbonized-light`).
 
 #### fish
 
