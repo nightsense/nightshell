@@ -2,16 +2,16 @@
 
 # This script doesn't support linux console (use 'vconsole' template instead)
 if [ "${TERM%%-*}" = 'linux' ]; then
-  return 2>/dev/null || exit 0
+    return 2>/dev/null || exit 0
 fi
 
 color00="ff/fe/fa" # Base 00 - Black
-color01="bf/50/50" # Base 08 - Red
-color02="6a/94/56" # Base 0B - Green
-color03="ab/95/2b" # Base 0A - Yellow
-color04="63/87/ab" # Base 0D - Blue
-color05="8f/72/ab" # Base 0E - Magenta
-color06="4a/94/94" # Base 0C - Cyan
+color01="d4/59/59" # Base 08 - Red
+color02="6b/94/56" # Base 0B - Green
+color03="bf/9b/30" # Base 0A - Yellow
+color04="6f/97/bf" # Base 0D - Blue
+color05="a0/80/bf" # Base 0E - Magenta
+color06="48/ab/ab" # Base 0C - Cyan
 color07="52/51/50" # Base 05 - White
 color08="99/98/96" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
@@ -21,12 +21,12 @@ color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
 color15="1f/1e/1e" # Base 07 - Bright White
-color16="bf/7f/3f" # Base 09
-color17="bf/80/90" # Base 0F
-color18="e6/e5/e1" # Base 01
+color16="d4/8d/46" # Base 09
+color17="d4/8e/99" # Base 0F
+color18="e8/e7/e3" # Base 01
 color19="bf/bf/bb" # Base 02
 color20="70/70/6e" # Base 04
-color21="33/33/32" # Base 06
+color21="30/30/2f" # Base 06
 color_foreground="52/51/50" # Base 05
 color_background="ff/fe/fa" # Base 00
 
@@ -122,4 +122,4 @@ unset color21
 unset color_foreground
 unset color_background
 
-echo -ne '\e]12;#6a9456\a'
+echo -ne '\e]12;#6b9456\a'
