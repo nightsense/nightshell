@@ -2,7 +2,7 @@
 
 **Terminal theme setter** for nightsense-designed themes. Namely:
 
-- [9009](https://github.com/nightsense/9009) (`9009-light` • `9009-dark`)
+- [9009](https://github.com/nightsense/9009) (`9009-green` • `9009-pink`)
 - [carbonized](https://github.com/nightsense/carbonized) (`carbonized-light` • `carbonized-dark`)
 - [willy](https://github.com/nightsense/willy) (`willy`)
 
