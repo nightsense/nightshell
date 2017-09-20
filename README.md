@@ -4,6 +4,7 @@
 
 - [9009](https://github.com/nightsense/9009) (`9009-light` • `9009-dark`)
 - [carbonized](https://github.com/nightsense/carbonized) (`carbonized-light` • `carbonized-dark`)
+- [willy](https://github.com/nightsense/willy) (`willy`)
 
 nightshell is compatible with various terminal applications, including gnome-terminal, roxterm, st, terminator, tilda, tilix, urxvt, xfce4-terminal, and xterm.
 
