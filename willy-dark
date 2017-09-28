@@ -5,7 +5,7 @@ if [ "${TERM%%-*}" = 'linux' ]; then
     return 2>/dev/null || exit 0
 fi
 
-color00="29/1b/14" # Base 00 - Black
+color00="1f/13/0d" # Base 00 - Black
 color01="d4/59/63" # Base 08 - Red
 color02="63/94/4a" # Base 0B - Green
 color03="bf/95/3f" # Base 0A - Yellow
@@ -28,7 +28,7 @@ color19="52/3a/29" # Base 02
 color20="99/79/59" # Base 04
 color21="e8/d0/ae" # Base 06
 color_foreground="bf/a5/80" # Base 05
-color_background="29/1b/14" # Base 00
+color_background="1f/13/0d" # Base 00
 
 if [ -n "$TMUX" ]; then
   # Tell tmux to pass the escape sequences through
@@ -77,12 +77,12 @@ printf $printf_template 21 $color21
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
   printf $printf_template_custom Pg bfa580 # foreground
-  printf $printf_template_custom Ph 291b14 # background
+  printf $printf_template_custom Ph 1f130d # background
   printf $printf_template_custom Pi bfa580 # bold color
   printf $printf_template_custom Pj 523a29 # selection color
   printf $printf_template_custom Pk bfa580 # selected text color
   printf $printf_template_custom Pl bfa580 # cursor
-  printf $printf_template_custom Pm 291b14 # cursor text
+  printf $printf_template_custom Pm 1f130d # cursor text
 else
   printf $printf_template_var 10 $color_foreground
   if [ "$BASE16_SHELL_SET_BACKGROUND" != false ]; then
