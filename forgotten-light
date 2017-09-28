@@ -122,4 +122,4 @@ unset color21
 unset color_foreground
 unset color_background
 
-echo -ne '\e]12;#6a9456\a'
+echo -ne '\e]12;#3f8abf\a'
