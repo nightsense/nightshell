@@ -3,7 +3,7 @@
 **Terminal theme setter** for nightsense-designed themes. Namely:
 
 - [carbonized](https://github.com/nightsense/carbonized) (`carbonized-light` • `carbonized-dark`)
-- [willy](https://github.com/nightsense/willy) (`willy`)
+- [willy](https://github.com/nightsense/willy) (`willy-light` • `willy-dark`)
 
 nightshell is compatible with various terminal applications, including gnome-terminal, roxterm, st, terminator, tilda, tilix, urxvt, xfce4-terminal, and xterm.
 
