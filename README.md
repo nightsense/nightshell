@@ -3,6 +3,7 @@
 **Terminal theme setter** for nightsense-designed themes. Namely:
 
 - [carbonized](https://github.com/nightsense/carbonized) (`carbonized-light` • `carbonized-dark`)
+- [forgotten](https://github.com/nightsense/forgotten) (`forgotten-light` • `forgotten-dark`)
 - [princess](https://github.com/nightsense/princess) (`princess-light` • `princess-dark`)
 - [willy](https://github.com/nightsense/willy) (`willy-light` • `willy-dark`)
 - [9009](https://github.com/nightsense/9009) (`9009-light` • `9009-dark`)
