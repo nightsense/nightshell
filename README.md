@@ -2,11 +2,12 @@
 
 **Terminal theme setter** for nightsense-designed themes. Namely:
 
-- [carbonized](https://github.com/nightsense/carbonized) (`carbonized-light` • `carbonized-dark`)
-- [forgotten](https://github.com/nightsense/forgotten) (`forgotten-light` • `forgotten-dark`)
-- [princess](https://github.com/nightsense/princess) (`princess-light` • `princess-dark`)
-- [willy](https://github.com/nightsense/willy) (`willy-light` • `willy-dark`)
-- [9009](https://github.com/nightsense/9009) (`9009-light` • `9009-dark`)
+- [9009](https://github.com/nightsense/9009)
+- [carbonized](https://github.com/nightsense/carbonized)
+- [forgotten](https://github.com/nightsense/forgotten)
+- [plumber](https://github.com/nightsense/plumber)
+- [princess](https://github.com/nightsense/princess)
+- [willy](https://github.com/nightsense/willy)
 
 nightshell is compatible with various terminal applications, including gnome-terminal, roxterm, st, terminator, tilda, tilix, urxvt, xfce4-terminal, and xterm.
 
