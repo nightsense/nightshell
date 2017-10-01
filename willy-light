@@ -6,12 +6,12 @@ if [ "${TERM%%-*}" = 'linux' ]; then
 fi
 
 color00="ff/f2/e0" # Base 00 - Black
-color01="d4/59/63" # Base 08 - Red
-color02="63/94/4a" # Base 0B - Green
-color03="bf/95/3f" # Base 0A - Yellow
-color04="60/97/bf" # Base 0D - Blue
+color01="d4/46/52" # Base 08 - Red
+color02="52/94/31" # Base 0B - Green
+color03="ab/7c/1d" # Base 0A - Yellow
+color04="56/87/ab" # Base 0D - Blue
 color05="7c/72/ab" # Base 0E - Magenta
-color06="56/94/7f" # Base 0C - Cyan
+color06="3e/94/77" # Base 0C - Cyan
 color07="52/3a/29" # Base 05 - White
 color08="99/79/59" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
@@ -21,8 +21,8 @@ color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
 color15="1f/13/0d" # Base 07 - Bright White
-color16="d4/6d/59" # Base 09
-color17="ab/80/a4" # Base 0F
+color16="d4/6d/24" # Base 09
+color17="ab/73/a2" # Base 0F
 color18="e8/d0/ae" # Base 01
 color19="bf/a5/80" # Base 02
 color20="70/54/41" # Base 04
@@ -122,4 +122,4 @@ unset color21
 unset color_foreground
 unset color_background
 
-echo -ne '\e]12;#bf953f\a'
+echo -ne '\e]12;#ab7c1d\a'
