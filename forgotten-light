@@ -6,14 +6,14 @@ if [ "${TERM%%-*}" = 'linux' ]; then
 fi
 
 color00="f5/fa/ff" # Base 00 - Black
-color01="bf/3f/4a" # Base 08 - Red
-color02="4a/80/00" # Base 0B - Green
-color03="d4/8d/00" # Base 0A - Yellow
+color01="d4/46/52" # Base 08 - Red
+color02="65/94/25" # Base 0B - Green
+color03="bf/85/0f" # Base 0A - Yellow
 color04="3f/8a/bf" # Base 0D - Blue
 color05="7d/6f/bf" # Base 0E - Magenta
 color06="3e/94/7e" # Base 0C - Cyan
 color07="44/4b/52" # Base 05 - White
-color08="7f/8c/99" # Base 03 - Bright Black
+color08="8d/93/99" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
@@ -21,11 +21,11 @@ color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
 color15="19/1c/1f" # Base 07 - Bright White
-color16="d4/69/00" # Base 09
-color17="bf/60/a7" # Base 0F
-color18="d5/df/e8" # Base 01
-color19="a8/b4/bf" # Base 02
-color20="5d/67/70" # Base 04
+color16="d4/72/11" # Base 09
+color17="bf/6f/ab" # Base 0F
+color18="df/e3/e8" # Base 01
+color19="b0/b8/bf" # Base 02
+color20="67/6c/70" # Base 04
 color21="28/2c/30" # Base 06
 color_foreground="44/4b/52" # Base 05
 color_background="f5/fa/ff" # Base 00
@@ -79,7 +79,7 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   printf $printf_template_custom Pg 444b52 # foreground
   printf $printf_template_custom Ph f5faff # background
   printf $printf_template_custom Pi 444b52 # bold color
-  printf $printf_template_custom Pj a8b4bf # selection color
+  printf $printf_template_custom Pj b0b8bf # selection color
   printf $printf_template_custom Pk 444b52 # selected text color
   printf $printf_template_custom Pl 444b52 # cursor
   printf $printf_template_custom Pm f5faff # cursor text

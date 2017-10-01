@@ -6,14 +6,14 @@ if [ "${TERM%%-*}" = 'linux' ]; then
 fi
 
 color00="19/1c/1f" # Base 00 - Black
-color01="bf/3f/4a" # Base 08 - Red
-color02="4a/80/00" # Base 0B - Green
-color03="d4/8d/00" # Base 0A - Yellow
+color01="d4/46/52" # Base 08 - Red
+color02="65/94/25" # Base 0B - Green
+color03="bf/85/0f" # Base 0A - Yellow
 color04="3f/8a/bf" # Base 0D - Blue
 color05="7d/6f/bf" # Base 0E - Magenta
 color06="3e/94/7e" # Base 0C - Cyan
-color07="a8/b4/bf" # Base 05 - White
-color08="5d/67/70" # Base 03 - Bright Black
+color07="b0/b8/bf" # Base 05 - White
+color08="67/6c/70" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
@@ -21,13 +21,13 @@ color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
 color15="f5/fa/ff" # Base 07 - Bright White
-color16="d4/69/00" # Base 09
-color17="bf/60/a7" # Base 0F
+color16="d4/72/11" # Base 09
+color17="bf/6f/ab" # Base 0F
 color18="28/2c/30" # Base 01
 color19="44/4b/52" # Base 02
-color20="7f/8c/99" # Base 04
-color21="d5/df/e8" # Base 06
-color_foreground="a8/b4/bf" # Base 05
+color20="8d/93/99" # Base 04
+color21="df/e3/e8" # Base 06
+color_foreground="b0/b8/bf" # Base 05
 color_background="19/1c/1f" # Base 00
 
 if [ -n "$TMUX" ]; then
@@ -76,12 +76,12 @@ printf $printf_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  printf $printf_template_custom Pg a8b4bf # foreground
+  printf $printf_template_custom Pg b0b8bf # foreground
   printf $printf_template_custom Ph 191c1f # background
-  printf $printf_template_custom Pi a8b4bf # bold color
+  printf $printf_template_custom Pi b0b8bf # bold color
   printf $printf_template_custom Pj 444b52 # selection color
-  printf $printf_template_custom Pk a8b4bf # selected text color
-  printf $printf_template_custom Pl a8b4bf # cursor
+  printf $printf_template_custom Pk b0b8bf # selected text color
+  printf $printf_template_custom Pl b0b8bf # cursor
   printf $printf_template_custom Pm 191c1f # cursor text
 else
   printf $printf_template_var 10 $color_foreground
@@ -122,4 +122,4 @@ unset color21
 unset color_foreground
 unset color_background
 
-echo -ne '\e]12;#bf3f4a\a'
+echo -ne '\e]12;#d44652\a'
