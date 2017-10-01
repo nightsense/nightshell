@@ -7,6 +7,8 @@
 - [forgotten](https://github.com/nightsense/forgotten)
 - [plumber](https://github.com/nightsense/plumber)
 - [princess](https://github.com/nightsense/princess)
+- [seagull](https://github.com/nightsense/seagull)
+- [vrunchbang](https://github.com/nightsense/vrunchbang)
 - [willy](https://github.com/nightsense/willy)
 
 nightshell is compatible with various terminal applications, including gnome-terminal, roxterm, st, terminator, tilda, tilix, urxvt, xfce4-terminal, and xterm.
