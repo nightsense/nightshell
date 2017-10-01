@@ -5,30 +5,30 @@ if [ "${TERM%%-*}" = 'linux' ]; then
     return 2>/dev/null || exit 0
 fi
 
-color00="1f/1d/17" # Base 00 - Black
+color00="1f/1e/19" # Base 00 - Black
 color01="d4/59/59" # Base 08 - Red
 color02="6b/94/56" # Base 0B - Green
 color03="bf/9b/30" # Base 0A - Yellow
 color04="6f/97/bf" # Base 0D - Blue
 color05="a0/80/bf" # Base 0E - Magenta
 color06="3e/94/94" # Base 0C - Cyan
-color07="bf/be/b8" # Base 05 - White
-color08="70/6e/63" # Base 03 - Bright Black
+color07="bf/bd/b0" # Base 05 - White
+color08="70/6f/67" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
 color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
-color15="ff/fe/fa" # Base 07 - Bright White
+color15="ff/fd/f5" # Base 07 - Bright White
 color16="d4/8d/46" # Base 09
 color17="d4/8e/99" # Base 0F
-color18="30/2f/26" # Base 01
+color18="30/2f/28" # Base 01
 color19="52/4f/44" # Base 02
 color20="99/97/8d" # Base 04
-color21="e8/e7/e1" # Base 06
-color_foreground="bf/be/b8" # Base 05
-color_background="1f/1d/17" # Base 00
+color21="e8/e7/df" # Base 06
+color_foreground="bf/bd/b0" # Base 05
+color_background="1f/1e/19" # Base 00
 
 if [ -n "$TMUX" ]; then
   # Tell tmux to pass the escape sequences through
@@ -76,13 +76,13 @@ printf $printf_template 21 $color21
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  printf $printf_template_custom Pg bfbeb8 # foreground
-  printf $printf_template_custom Ph 1f1d17 # background
-  printf $printf_template_custom Pi bfbeb8 # bold color
+  printf $printf_template_custom Pg bfbdb0 # foreground
+  printf $printf_template_custom Ph 1f1e19 # background
+  printf $printf_template_custom Pi bfbdb0 # bold color
   printf $printf_template_custom Pj 524f44 # selection color
-  printf $printf_template_custom Pk bfbeb8 # selected text color
-  printf $printf_template_custom Pl bfbeb8 # cursor
-  printf $printf_template_custom Pm 1f1d17 # cursor text
+  printf $printf_template_custom Pk bfbdb0 # selected text color
+  printf $printf_template_custom Pl bfbdb0 # cursor
+  printf $printf_template_custom Pm 1f1e19 # cursor text
 else
   printf $printf_template_var 10 $color_foreground
   if [ "$BASE16_SHELL_SET_BACKGROUND" != false ]; then
@@ -122,4 +122,4 @@ unset color21
 unset color_foreground
 unset color_background
 
-echo -ne '\e]12;#99978d\a'
+echo -ne '\e]12;#706f67\a'
