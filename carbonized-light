@@ -1,7 +1,8 @@
 #!/bin/sh
-# this script is based on the
+# carbonized-light shell theme script
+# generated with a template adapted from
 # Base16 Shell template by Chris Kempson (http://chriskempson.com)
-#
+
 
 # This script doesn't support linux console (use 'vconsole' template instead)
 if [ "${TERM%%-*}" = 'linux' ]; then
@@ -82,7 +83,7 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   printf $printf_template_custom Pg 524f4b # foreground
   printf $printf_template_custom Ph fff8eb # background
   printf $printf_template_custom Pi 524f4b # bold color
-  printf $printf_template_custom Pj bfbab0 # selection color
+  printf $printf_template_custom Pj 99958d # selection color
   printf $printf_template_custom Pk 303030 # selected text color
   printf $printf_template_custom Pl d47546 # cursor
   printf $printf_template_custom Pm fff8eb # cursor text
@@ -125,5 +126,4 @@ unset color21
 unset color_foreground
 unset color_background
 
-
-echo -ne '\e]12;#d47546\a' # cursor
+echo -ne '\e]12;#d47546\a' # set cursor colour
