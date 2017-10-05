@@ -60,7 +60,7 @@ Once you've installed this repository (step 1), your nightsense-designed vim the
 
 > Terminal **neovim** will often work as well. neovim users should add `set termguicolors` to their configuration.
 
-If **different themes** are used in the terminal and vim, however, the vim theme will persist in the terminal after vim is closed. In order to restore the terminal theme upon exiting vim, you can wrap the `vim` command in a shell function.
+If **different themes** are used in the terminal and vim, however, the vim theme will persist in the terminal after vim is closed. In order to restore the terminal theme upon exiting vim, you can wrap the `vim` command in a shell function:
 
 #### bash/zsh
 
