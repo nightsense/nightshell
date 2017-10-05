@@ -10,12 +10,12 @@ if [ "${TERM%%-*}" = 'linux' ]; then
 fi
 
 color00="1f/17/1b" # Base 00 - Black
-color01="bf/50/50" # Base 08 - Red
-color02="56/94/56" # Base 0B - Green
-color03="ab/8b/2b" # Base 0A - Yellow
-color04="60/8f/bf" # Base 0D - Blue
-color05="8f/72/ab" # Base 0E - Magenta
-color06="56/94/94" # Base 0C - Cyan
+color01="ff/5a/54" # Base 08 - Red
+color02="5c/9e/65" # Base 0B - Green
+color03="eb/d4/3b" # Base 0A - Yellow
+color04="75/aa/c9" # Base 0D - Blue
+color05="a6/87/c9" # Base 0E - Magenta
+color06="5c/9e/99" # Base 0C - Cyan
 color07="bf/8f/a7" # Base 05 - White
 color08="70/54/62" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
@@ -25,8 +25,8 @@ color12=$color04 # Base 0D - Bright Blue
 color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
 color15="ff/eb/f5" # Base 07 - Bright White
-color16="bf/77/30" # Base 09
-color17="bf/6f/98" # Base 0F
+color16="eb/8f/4e" # Base 09
+color17="e0/82/a9" # Base 0F
 color18="30/24/2a" # Base 01
 color19="52/3d/47" # Base 02
 color20="99/73/86" # Base 04
@@ -85,7 +85,7 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   printf $printf_template_custom Pi bf8fa7 # bold color
   printf $printf_template_custom Pj 705462 # selection color
   printf $printf_template_custom Pk e8ccda # selected text color
-  printf $printf_template_custom Pl bf6f98 # cursor
+  printf $printf_template_custom Pl e082a9 # cursor
   printf $printf_template_custom Pm 1f171b # cursor text
 else
   printf $printf_template_var 10 $color_foreground
@@ -126,4 +126,4 @@ unset color21
 unset color_foreground
 unset color_background
 
-printf '%b' '\e]12;#bf6f98\a' # set cursor colour
+printf '%b' '\e]12;#e082a9\a' # set cursor colour

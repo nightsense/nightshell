@@ -1,11 +1,3 @@
-#!/bin/sh
-# plumber-light, a shell theme script by nightsense
-# generated with a template adapted from
-# Base16 Shell template by Chris Kempson (http://chriskempson.com)
-
-
-# This script doesn't support linux console (use 'vconsole' template instead)
-if [ "${TERM%%-*}" = 'linux' ]; then
     return 2>/dev/null || exit 0
 fi
 
