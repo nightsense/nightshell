@@ -26,7 +26,7 @@ git clone https://github.com/nightsense/nightshell ~/.nightshell
 
 When updates are made to this repository, upgrade nightshell by navigating to `~/.nightshell` and running `git pull`.
 
-> Or install nightshell by [downloading this repository manually](https://github.com/nightsense/nightshell/archive/master.zip) and unzipping the contents to directory `~/.nightshell`.
+> Or install by [downloading this repository manually](https://github.com/nightsense/nightshell/archive/master.zip) and unzipping the contents to directory `~/.nightshell`.
 
 With nightshell installed, a list of available themes can be generated with `ls ~/.nightshell | grep -v README`.
 
