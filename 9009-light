@@ -1,4 +1,8 @@
 #!/bin/sh
+# 9009-light, a shell theme script by nightsense
+# generated with a template adapted from
+# Base16 Shell template by Chris Kempson (http://chriskempson.com)
+
 
 # This script doesn't support linux console (use 'vconsole' template instead)
 if [ "${TERM%%-*}" = 'linux' ]; then
@@ -79,9 +83,9 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   printf $printf_template_custom Pg 524f44 # foreground
   printf $printf_template_custom Ph fffdf5 # background
   printf $printf_template_custom Pi 524f44 # bold color
-  printf $printf_template_custom Pj bfbdb0 # selection color
-  printf $printf_template_custom Pk 524f44 # selected text color
-  printf $printf_template_custom Pl 524f44 # cursor
+  printf $printf_template_custom Pj 99978d # selection color
+  printf $printf_template_custom Pk 302f28 # selected text color
+  printf $printf_template_custom Pl 99978d # cursor
   printf $printf_template_custom Pm fffdf5 # cursor text
 else
   printf $printf_template_var 10 $color_foreground
@@ -122,4 +126,4 @@ unset color21
 unset color_foreground
 unset color_background
 
-echo -ne '\e]12;#99978d\a'
+printf '%b' '\e]12;#99978d\a' # set cursor colour
