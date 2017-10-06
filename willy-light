@@ -12,7 +12,7 @@ fi
 color00="ff/e6/d4" # Base 00 - Black
 color01="eb/40/3a" # Base 08 - Red
 color02="25/94/33" # Base 0B - Green
-color03="eb/ce/3b" # Base 0A - Yellow
+color03="eb/c8/3b" # Base 0A - Yellow
 color04="30/8b/bf" # Base 0D - Blue
 color05="8c/60/bf" # Base 0E - Magenta
 color06="00/94/88" # Base 0C - Cyan
@@ -26,7 +26,7 @@ color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
 color15="2b/16/07" # Base 07 - Bright White
 color16="eb/6d/13" # Base 09
-color17="e0/5e/8e" # Base 0F
+color17="e0/5e/89" # Base 0F
 color18="e0/b5/96" # Base 01
 color19="bf/90/6f" # Base 02
 color20="75/47/27" # Base 04
@@ -85,7 +85,7 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   printf $printf_template_custom Pi 542f15 # bold color
   printf $printf_template_custom Pj 94623e # selection color
   printf $printf_template_custom Pk 40210b # selected text color
-  printf $printf_template_custom Pl ebce3b # cursor
+  printf $printf_template_custom Pl ebc83b # cursor
   printf $printf_template_custom Pm ffe6d4 # cursor text
 else
   printf $printf_template_var 10 $color_foreground
@@ -126,4 +126,4 @@ unset color21
 unset color_foreground
 unset color_background
 
-printf '%b' '\e]12;#ebce3b\a' # set cursor colour
+printf '%b' '\e]12;#ebc83b\a' # set cursor colour
