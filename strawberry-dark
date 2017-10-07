@@ -4,9 +4,25 @@
 # Base16 Shell template by Chris Kempson (http://chriskempson.com)
 
 
-# This script doesn't support linux console (use 'vconsole' template instead)
+# linux console
 if [ "${TERM%%-*}" = 'linux' ]; then
-  return 2>/dev/null || exit 0
+  echo -e "\e]P02b191e"
+  echo -e "\e]P1eb6363"
+  echo -e "\e]P2639467"
+  echo -e "\e]P3e0c34a"
+  echo -e "\e]P46097bf"
+  echo -e "\e]P59a80bf"
+  echo -e "\e]P64a948e"
+  echo -e "\e]P7bf8093"
+  echo -e "\e]P8754f5a"
+  echo -e "\e]P9e0894a"
+  echo -e "\e]PA40252d"
+  echo -e "\e]PB54313b"
+  echo -e "\e]PC946372"
+  echo -e "\e]PDe0bac6"
+  echo -e "\e]PEe0829e"
+  echo -e "\e]PFffebf1"
+  exit 0
 fi
 
 color00="2b/19/1e" # Base 00 - Black

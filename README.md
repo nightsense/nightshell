@@ -13,6 +13,8 @@
 
 nightshell is compatible with various terminal applications, including gnome-terminal, roxterm, st, terminator, tilda, tilix, urxvt, xfce4-terminal, and xterm.
 
+nightshell supports **vim** and **neovim** in any of the above terminals.
+
 
 ## usage
 
@@ -58,7 +60,7 @@ if status --is-interactive; sh ~/.nightshell/THEME; end
 
 Once you've installed this repository (step 1), your nightsense-designed vim theme should work in terminal vim (provided the terminal application is compatible).
 
-> **neovim** will also work in most terminals. Ensure your configuration includes `set termguicolors`.
+> **neovim** users: ensure your configuration does not contain `set termguicolors`.
 
 If **different themes** are used in the terminal and vim, however, the vim theme will persist in the terminal after vim is closed. In order to restore the terminal theme upon exiting vim, you can wrap the `vim` command in a shell function:
 
