@@ -13,7 +13,7 @@
 
 nightshell is compatible with the **Linux console** and various **terminal emulators**, including gnome-terminal, roxterm, st, terminator, tilda, tilix, urxvt, xfce4-terminal, and xterm.
 
-nightshell supports terminal **vim** and **neovim**.
+nightshell supports **terminal vim/neovim**.
 
 
 ## usage
