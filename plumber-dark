@@ -1,3 +1,11 @@
+#!/bin/sh
+# plumber-dark, a shell theme script by nightsense
+# generated with a template adapted from
+# Base16 Shell template by Chris Kempson (http://chriskempson.com)
+
+
+# This script doesn't support linux console (use 'vconsole' template instead)
+if [ "${TERM%%-*}" = 'linux' ]; then
     return 2>/dev/null || exit 0
 fi
 
@@ -6,10 +14,10 @@ color01="d8/28/00" # Base 08 - Red
 color02="00/a8/00" # Base 0B - Green
 color03="fc/98/38" # Base 0A - Yellow
 color04="5c/94/fc" # Base 0D - Blue
-color05="fc/74/b4" # Base 0E - Magenta
+color05="18/3c/5c" # Base 0E - Magenta
 color06="00/80/88" # Base 0C - Cyan
 color07="bc/bc/bc" # Base 05 - White
-color08="00/80/88" # Base 03 - Bright Black
+color08="74/74/74" # Base 03 - Bright Black
 color09=$color01 # Base 08 - Bright Red
 color10=$color02 # Base 0B - Bright Green
 color11=$color03 # Base 0A - Bright Yellow
@@ -18,10 +26,10 @@ color13=$color05 # Base 0E - Bright Magenta
 color14=$color06 # Base 0C - Bright Cyan
 color15="fc/fc/fc" # Base 07 - Bright White
 color16="c8/4c/0c" # Base 09
-color17="e4/00/58" # Base 0F
+color17="fc/74/b4" # Base 0F
 color18="18/3c/5c" # Base 01
-color19="18/3c/5c" # Base 02
-color20="00/80/88" # Base 04
+color19="00/80/88" # Base 02
+color20="5c/94/fc" # Base 04
 color21="bc/bc/bc" # Base 06
 color_foreground="bc/bc/bc" # Base 05
 color_background="00/00/00" # Base 00
@@ -75,7 +83,7 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   printf $printf_template_custom Pg bcbcbc # foreground
   printf $printf_template_custom Ph 000000 # background
   printf $printf_template_custom Pi bcbcbc # bold color
-  printf $printf_template_custom Pj 008088 # selection color
+  printf $printf_template_custom Pj 747474 # selection color
   printf $printf_template_custom Pk bcbcbc # selected text color
   printf $printf_template_custom Pl 00a800 # cursor
   printf $printf_template_custom Pm 000000 # cursor text
