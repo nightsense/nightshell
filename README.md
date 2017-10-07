@@ -11,9 +11,9 @@
 - [vrunchbang](https://github.com/nightsense/vrunchbang)
 - [wonka](https://github.com/nightsense/wonka)
 
-nightshell is compatible with various terminal applications, including gnome-terminal, roxterm, st, terminator, tilda, tilix, urxvt, xfce4-terminal, and xterm.
+nightshell is compatible with the **Linux console** and various **terminal emulators**, including gnome-terminal, roxterm, st, terminator, tilda, tilix, urxvt, xfce4-terminal, and xterm.
 
-nightshell supports **vim** and **neovim** in any of the above terminals.
+nightshell supports terminal **vim** and **neovim**.
 
 
 ## usage
