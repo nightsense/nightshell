@@ -84,5 +84,5 @@ function vim; sh -c "vim $argv"; sh ~/.nightshell/THEME; clear; end
 
 ## troubleshooting
 
-- if colours are off in **neovim**, ensure your configuration does not contain `set termguicolors`
-- if colours are off in **tmux**, try launching tmux with `tmux -2`
+- if colours aren't displaying correctly in **neovim**, ensure your configuration does not contain `set termguicolors`
+- if colours aren't displaying correctly in **tmux**, try launching tmux with `tmux -2`
