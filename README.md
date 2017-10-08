@@ -25,9 +25,9 @@ nightshell is compatible with the **Linux console** and various **terminal emula
 git clone https://github.com/nightsense/nightshell ~/.nightshell
 ```
 
-When updates are made to this repository, **upgrade nightshell** by navigating to `~/.nightshell` and running `git pull`.
-
 > Or install by [downloading this repository manually](https://github.com/nightsense/nightshell/archive/master.zip) and unzipping the contents to directory `~/.nightshell`.
+
+When updates are made to this repository, **upgrade nightshell** by navigating to `~/.nightshell` and running `git pull`.
 
 With nightshell installed, you can **list available themes** by running `ls ~/.nightshell | grep -v README`.
 
