@@ -35,6 +35,8 @@ With nightshell installed, a list of available themes can be generated with `ls 
 
 ### step 2 - shell configuration
 
+Note: complete this step only if you want to use a theme for general terminal operation. (If you just want the theme for terminal vim, skip to step 3.)
+
 #### bash/zsh
 
 Add the following to `~/.bashrc` or `~/.zshrc`...
@@ -59,7 +61,7 @@ if status --is-interactive; sh ~/.nightshell/THEME; end
 
 ### step 3 - terminal vim
 
-Once you've installed this repository (step 1), your nightsense-designed vim theme should work in terminal vim (provided the terminal application is compatible).
+Once you've installed this repository (step 1), your nightsense-designed vim theme should work in terminal vim (provided the terminal application is compatible). (The vim theme file will automatically run the appropriate script in `~/.nightshell/`.)
 
 If **different themes** are used in the terminal and vim, however, the vim theme will persist in the terminal after vim is closed. In order to restore the terminal theme upon exiting vim, you can wrap the `vim` command in a shell function:
 
