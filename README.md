@@ -12,9 +12,9 @@
 - [vrunchbang](https://github.com/nightsense/vrunchbang)
 - [wonka](https://github.com/nightsense/wonka)
 
-nightshell is compatible with the **Linux console** and various **terminal emulators**, including gnome-terminal, roxterm, st, terminator, tilda, tilix, urxvt, xfce4-terminal, and xterm.
+nightshell is compatible with the **Linux console** and various **terminal emulators**, including gnome-terminal, roxterm, st, terminator, tilda, tilix, urxvt, xfce4-terminal, and xterm. Terminal **vim** and **neovim** are supported, and everything should work in **screen** and **tmux**.
 
-nightshell supports **vim** and **neovim** in the terminal.
+> If colours aren't displaying properly, the issue is probably related to 256-colour support. Be sure your terminal (and multiplexer, if applicable) supports 256 colours and is properly configured.
 
 
 ## step 1 - installation
@@ -85,5 +85,7 @@ function vim; sh -c "vim $argv"; sh ~/.nightshell/THEME; clear; end
 
 ## troubleshooting
 
-- if colours aren't displaying correctly in **neovim**, ensure your configuration does not contain `set termguicolors`
-- if colours aren't displaying correctly in **tmux**, try launching tmux with `tmux -2`
+If colours aren't displaying correctly...
+
+- ...in **neovim**, ensure your configuration does not contain `set termguicolors`
+- ...in **tmux**, try launching tmux with `tmux -2`
