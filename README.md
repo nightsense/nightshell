@@ -73,7 +73,7 @@ Add the following to `~/.bashrc` or `~/.zshrc`...
 vim(){ sh -c "vim $*"; sh ~/.nightshell/THEME; clear; }
 ```
 
-...replacing `THEME` with the desired colourscheme (e.g. `sh ~/.nightshell/carbonized-light`).
+...replacing `THEME` with the colourscheme (e.g. `sh ~/.nightshell/carbonized-light`) to restore upon exiting vim.
 
 #### fish
 
@@ -83,7 +83,7 @@ Add the following to `~/.config/fish/config.fish`...
 function vim; sh -c "vim $argv"; sh ~/.nightshell/THEME; clear; end
 ```
 
-...replacing `THEME` with the desired colourscheme (e.g. `sh ~/.nightshell/carbonized-light`).
+...replacing `THEME` with the colourscheme (e.g. `sh ~/.nightshell/carbonized-light`) to restore upon exiting vim.
 
 ## troubleshooting
 
