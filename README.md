@@ -59,7 +59,7 @@ if status --is-interactive; sh ~/.nightshell/THEME; end
 
 Once you've installed this repository (step 1), your nightsense-designed vim theme should work in terminal vim (provided the terminal application is compatible). (The vim theme file will automatically run the appropriate script in `~/.nightshell/`.)
 
-If **different themes** are used in the terminal and vim, however, the vim theme will persist in the terminal after vim is closed. In order to restore the terminal theme upon exiting vim, you can wrap the `vim` command in a shell function:
+If **different nightshell themes** are used in the terminal and vim, however, the vim theme will persist in the terminal after vim is closed. In order to restore the nightshell terminal theme upon exiting vim, you can wrap the `vim` command in a shell function:
 
 ### bash/zsh
 
