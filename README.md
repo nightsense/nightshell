@@ -17,9 +17,7 @@ nightshell is compatible with the **Linux console** and various **terminal emula
 nightshell supports **vim** and **neovim** in the terminal.
 
 
-## usage
-
-### step 1 - installation
+## step 1 - installation
 
 Install nightshell by cloning this repository to `~/.nightshell`:
 
@@ -33,11 +31,11 @@ When updates are made to this repository, upgrade nightshell by navigating to `~
 
 With nightshell installed, a list of available themes can be generated with `ls ~/.nightshell | grep -v README`.
 
-### step 2 - shell configuration
+## step 2 - shell configuration
 
 Note: complete this step only if you want to use a theme for general terminal operation. (If you just want the theme for terminal vim, this step isn't necessary; skip to step 3.)
 
-#### bash/zsh
+### bash/zsh
 
 Add the following to `~/.bashrc` or `~/.zshrc`...
 
@@ -49,7 +47,7 @@ Add the following to `~/.bashrc` or `~/.zshrc`...
 
 > On [macOS](http://hayne.net/MacDev/Notes/unixFAQ.html#shellStartup), where `~/.bashrc` is not sourced automatically, you can add this line to `~/.bash_profile` instead.
 
-#### fish
+### fish
 
 Add the following to `~/.config/fish/config.fish`...
 
@@ -59,13 +57,13 @@ if status --is-interactive; sh ~/.nightshell/THEME; end
 
 ...replacing `THEME` with the desired colourscheme (e.g. `sh ~/.nightshell/carbonized-light`).
 
-### step 3 - terminal vim
+## step 3 - terminal vim
 
 Once you've installed this repository (step 1), your nightsense-designed vim theme should work in terminal vim (provided the terminal application is compatible). (The vim theme file will automatically run the appropriate script in `~/.nightshell/`.)
 
 If **different themes** are used in the terminal and vim, however, the vim theme will persist in the terminal after vim is closed. In order to restore the terminal theme upon exiting vim, you can wrap the `vim` command in a shell function:
 
-#### bash/zsh
+### bash/zsh
 
 Add the following to `~/.bashrc` or `~/.zshrc`...
 
@@ -75,7 +73,7 @@ vim(){ sh -c "vim $*"; sh ~/.nightshell/THEME; clear; }
 
 ...replacing `THEME` with the colourscheme (e.g. `sh ~/.nightshell/carbonized-light`) to restore upon exiting vim.
 
-#### fish
+### fish
 
 Add the following to `~/.config/fish/config.fish`...
 
