@@ -25,7 +25,7 @@ nightshell is compatible with the **Linux console** and various **terminal emula
 git clone https://github.com/nightsense/nightshell ~/.nightshell
 ```
 
-> Or install by [downloading this repository manually](https://github.com/nightsense/nightshell/archive/master.zip) and unzipping the contents to directory `~/.nightshell`.
+> Or [download this repository manually](https://github.com/nightsense/nightshell/archive/master.zip) and unzipping the contents to directory `~/.nightshell`.
 
 When updates are made to this repository, **upgrade nightshell** by navigating to `~/.nightshell` and running `git pull`.
 
