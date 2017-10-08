@@ -31,7 +31,7 @@ With nightshell installed, you can **list available themes** by running `ls ~/.n
 
 ## step 2 - shell configuration
 
-> Note: complete this step only if you want to use a theme for general terminal operation. (If you just want the theme for terminal vim, this step isn't necessary; skip to step 3.)
+> Note: complete this step only if you want to use a theme for general terminal operation. If you just want the theme for terminal vim, this step isn't necessary; skip to step 3.
 
 ### bash/zsh
 
