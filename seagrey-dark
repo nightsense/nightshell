@@ -14,7 +14,7 @@ if [ "${TERM%%-*}" = 'linux' ]; then
   echo -e "\e]P58b779e"
   echo -e "\e]P6508a80"
   echo -e "\e]P7b8bcbf"
-  echo -e "\e]P8616d75"
+  echo -e "\e]P86c7175"
   echo -e "\e]P9c97b42"
   echo -e "\e]PA303940"
   echo -e "\e]PB3f4b54"
@@ -35,7 +35,7 @@ color04="56/88/ab" # Base 0D - Blue
 color05="8b/77/9e" # Base 0E - Magenta
 color06="50/8a/80" # Base 0C - Cyan
 color07="b8/bc/bf" # Base 05 - White
-color08="61/6d/75" # Base 03 - Bright Black
+color08="6c/71/75" # Base 03 - Bright Black
 color09="c9/7b/42" # Base 09
 color10="30/39/40" # Base 01
 color11="3f/4b/54" # Base 02
@@ -87,7 +87,7 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   printf $printf_template_custom Pg b8bcbf # foreground
   printf $printf_template_custom Ph 1d252b # background
   printf $printf_template_custom Pi b8bcbf # bold color
-  printf $printf_template_custom Pj 616d75 # selection color
+  printf $printf_template_custom Pj 6c7175 # selection color
   printf $printf_template_custom Pk d7dde0 # selected text color
   printf $printf_template_custom Pl 888f94 # cursor
   printf $printf_template_custom Pm 1d252b # cursor text

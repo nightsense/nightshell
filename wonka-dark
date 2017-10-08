@@ -13,12 +13,12 @@ if [ "${TERM%%-*}" = 'linux' ]; then
   echo -e "\e]P45688ab"
   echo -e "\e]P58b779e"
   echo -e "\e]P6508a80"
-  echo -e "\e]P7bf9a80"
-  echo -e "\e]P8755944"
+  echo -e "\e]P7bfa38f"
+  echo -e "\e]P8766559"
   echo -e "\e]P9c97b42"
-  echo -e "\e]PA402a1b"
+  echo -e "\e]PA402d20"
   echo -e "\e]PB543c2a"
-  echo -e "\e]PC947763"
+  echo -e "\e]PC947e6f"
   echo -e "\e]PDe0caba"
   echo -e "\e]PEc97591"
   echo -e "\e]PFfff9f5"
@@ -34,16 +34,16 @@ color03="d4/b6/59" # Base 0A - Yellow
 color04="56/88/ab" # Base 0D - Blue
 color05="8b/77/9e" # Base 0E - Magenta
 color06="50/8a/80" # Base 0C - Cyan
-color07="bf/9a/80" # Base 05 - White
-color08="75/59/44" # Base 03 - Bright Black
+color07="bf/a3/8f" # Base 05 - White
+color08="76/65/59" # Base 03 - Bright Black
 color09="c9/7b/42" # Base 09
-color10="40/2a/1b" # Base 01
+color10="40/2d/20" # Base 01
 color11="54/3c/2a" # Base 02
-color12="94/77/63" # Base 04
+color12="94/7e/6f" # Base 04
 color13="e0/ca/ba" # Base 06
 color14="c9/75/91" # Base 0F
 color15="ff/f9/f5" # Base 07 - Bright White
-color_foreground="bf/9a/80" # Base 05
+color_foreground="bf/a3/8f" # Base 05
 color_background="2b/1a/0e" # Base 00
 
 if [ -n "$TMUX" ]; then
@@ -84,12 +84,12 @@ printf $printf_template 15 $color15
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  printf $printf_template_custom Pg bf9a80 # foreground
+  printf $printf_template_custom Pg bfa38f # foreground
   printf $printf_template_custom Ph 2b1a0e # background
-  printf $printf_template_custom Pi bf9a80 # bold color
-  printf $printf_template_custom Pj 755944 # selection color
+  printf $printf_template_custom Pi bfa38f # bold color
+  printf $printf_template_custom Pj 766559 # selection color
   printf $printf_template_custom Pk e0caba # selected text color
-  printf $printf_template_custom Pl 947763 # cursor
+  printf $printf_template_custom Pl 947e6f # cursor
   printf $printf_template_custom Pm 2b1a0e # cursor text
 else
   printf $printf_template_var 10 $color_foreground
@@ -122,4 +122,4 @@ unset color15
 unset color_foreground
 unset color_background
 
-printf '%b' '\e]12;#947763\a' # set cursor colour
+printf '%b' '\e]12;#947e6f\a' # set cursor colour
