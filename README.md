@@ -4,6 +4,7 @@
 
 - [carbonized](https://github.com/nightsense/carbonized)
 - [forgotten](https://github.com/nightsense/forgotten)
+- [nemo](https://github.com/nightsense/nemo)
 - [office](https://github.com/nightsense/office)
 - [plumber](https://github.com/nightsense/plumber)
 - [seagrey](https://github.com/nightsense/seagrey)

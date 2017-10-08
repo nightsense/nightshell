@@ -1,50 +1,50 @@
 #!/bin/sh
-# strawberry-dark, a shell theme script by nightsense
+# nemo-dark, a shell theme script by nightsense
 # generated with a template adapted from
 # Base16 Shell template by Chris Kempson (http://chriskempson.com)
 
 
 # linux console
 if [ "${TERM%%-*}" = 'linux' ]; then
-  echo -e "\e]P02b1d22"
+  echo -e "\e]P0161b2b"
   echo -e "\e]P1d45959"
   echo -e "\e]P25c8a60"
   echo -e "\e]P3d4b659"
   echo -e "\e]P45688ab"
   echo -e "\e]P58b779e"
   echo -e "\e]P6508a80"
-  echo -e "\e]P7bf8f9f"
-  echo -e "\e]P8754f5b"
+  echo -e "\e]P78090bf"
+  echo -e "\e]P8445075"
   echo -e "\e]P9c97b42"
-  echo -e "\e]PA402b32"
-  echo -e "\e]PB543842"
-  echo -e "\e]PC946f7b"
-  echo -e "\e]PDe0bac7"
+  echo -e "\e]PA252c40"
+  echo -e "\e]PB313a54"
+  echo -e "\e]PC566594"
+  echo -e "\e]PDbac3e0"
   echo -e "\e]PEc97591"
-  echo -e "\e]PFfff5f8"
+  echo -e "\e]PFf5f7ff"
   echo -e "\e[H"
   echo -e "\e[2J"
   exit 0
 fi
 
-color00="2b/1d/22" # Base 00 - Black
+color00="16/1b/2b" # Base 00 - Black
 color01="d4/59/59" # Base 08 - Red
 color02="5c/8a/60" # Base 0B - Green
 color03="d4/b6/59" # Base 0A - Yellow
 color04="56/88/ab" # Base 0D - Blue
 color05="8b/77/9e" # Base 0E - Magenta
 color06="50/8a/80" # Base 0C - Cyan
-color07="bf/8f/9f" # Base 05 - White
-color08="75/4f/5b" # Base 03 - Bright Black
+color07="80/90/bf" # Base 05 - White
+color08="44/50/75" # Base 03 - Bright Black
 color09="c9/7b/42" # Base 09
-color10="40/2b/32" # Base 01
-color11="54/38/42" # Base 02
-color12="94/6f/7b" # Base 04
-color13="e0/ba/c7" # Base 06
+color10="25/2c/40" # Base 01
+color11="31/3a/54" # Base 02
+color12="56/65/94" # Base 04
+color13="ba/c3/e0" # Base 06
 color14="c9/75/91" # Base 0F
-color15="ff/f5/f8" # Base 07 - Bright White
-color_foreground="bf/8f/9f" # Base 05
-color_background="2b/1d/22" # Base 00
+color15="f5/f7/ff" # Base 07 - Bright White
+color_foreground="80/90/bf" # Base 05
+color_background="16/1b/2b" # Base 00
 
 if [ -n "$TMUX" ]; then
   # Tell tmux to pass the escape sequences through
@@ -84,13 +84,13 @@ printf $printf_template 15 $color15
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  printf $printf_template_custom Pg bf8f9f # foreground
-  printf $printf_template_custom Ph 2b1d22 # background
-  printf $printf_template_custom Pi bf8f9f # bold color
-  printf $printf_template_custom Pj 754f5b # selection color
-  printf $printf_template_custom Pk e0bac7 # selected text color
-  printf $printf_template_custom Pl c97591 # cursor
-  printf $printf_template_custom Pm 2b1d22 # cursor text
+  printf $printf_template_custom Pg 8090bf # foreground
+  printf $printf_template_custom Ph 161b2b # background
+  printf $printf_template_custom Pi 8090bf # bold color
+  printf $printf_template_custom Pj 445075 # selection color
+  printf $printf_template_custom Pk bac3e0 # selected text color
+  printf $printf_template_custom Pl d4b659 # cursor
+  printf $printf_template_custom Pm 161b2b # cursor text
 else
   printf $printf_template_var 10 $color_foreground
   printf $printf_template_var 11 $color_background
@@ -122,4 +122,4 @@ unset color15
 unset color_foreground
 unset color_background
 
-printf '%b' '\e]12;#c97591\a' # set cursor colour
+printf '%b' '\e]12;#d4b659\a' # set cursor colour
