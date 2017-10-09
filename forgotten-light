@@ -3,7 +3,6 @@
 # generated with a template adapted from
 # Base16 Shell template by Chris Kempson (http://chriskempson.com)
 
-
 # linux console
 if [ "${TERM%%-*}" = 'linux' ]; then
   echo -e "\e]P0f5fbff"
