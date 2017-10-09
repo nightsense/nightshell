@@ -12,6 +12,8 @@
 - [vrunchbang](https://github.com/nightsense/vrunchbang)
 - [wonka](https://github.com/nightsense/wonka)
 
+Each theme above comes in two variants, dark and light. nightshell, which is simply a collection of scripts (one per theme+variant), is the easiest way to activate one of these themes in the terminal. Instead of a theme configuration file, the theme is activated on startup by sourcing the appropriate script in one's shell configuration.
+
 nightshell is compatible with the **Linux console** and various **terminal emulators**, including gnome-terminal, roxterm, st, terminator, tilda, tilix, urxvt, xfce4-terminal, and xterm. Terminal **vim** and **neovim** are supported, as are **screen** and **tmux**.
 
 > If colours aren't displaying properly, the issue is probably related to 256-colour support. Be sure your terminal (and multiplexer, if applicable) supports 256 colours and is properly configured.
@@ -31,7 +33,9 @@ With nightshell installed, you can **list available themes** by running `ls ~/.n
 
 ## step 2 - shell configuration
 
-> Note: complete this step only if you want to use a theme for general terminal operation. If you just want the theme for terminal vim, this step isn't necessary; skip to step 3.
+This step configures the shell to set the terminal theme on startup.
+
+> This step isn't necessary for theming terminal vim.
 
 ### bash/zsh
 
