@@ -12,7 +12,7 @@
 - [vrunchbang](https://github.com/nightsense/vrunchbang)
 - [wonka](https://github.com/nightsense/wonka)
 
-nightshell is compatible with the **Linux console** and various **terminal emulators**, including gnome-terminal, roxterm, st, terminator, tilda, tilix, urxvt, xfce4-terminal, and xterm. Terminal **vim** and **neovim** are supported, and everything should work in **screen** and **tmux**.
+nightshell is compatible with the **Linux console** and various **terminal emulators**, including gnome-terminal, roxterm, st, terminator, tilda, tilix, urxvt, xfce4-terminal, and xterm. Terminal **vim** and **neovim** are supported, as are **screen** and **tmux**.
 
 > If colours aren't displaying properly, the issue is probably related to 256-colour support. Be sure your terminal (and multiplexer, if applicable) supports 256 colours and is properly configured.
 
