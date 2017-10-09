@@ -35,7 +35,7 @@ With nightshell installed, you can **list available themes** by running `ls ~/.n
 
 This step configures the shell to set the terminal theme on startup.
 
-> This step isn't necessary for theming terminal vim.
+> Note: this step isn't necessary for theming terminal vim.
 
 ### bash/zsh
 
