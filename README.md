@@ -12,7 +12,7 @@
 - [vrunchbang](https://github.com/nightsense/vrunchbang)
 - [wonka](https://github.com/nightsense/wonka)
 
-Each theme above comes in two variants, dark and light. nightshell, which is simply a collection of scripts (one per theme+variant), is the easiest way to activate one of these themes in the terminal. Instead of a theme configuration file, the theme is activated on startup by sourcing the appropriate script in one's shell configuration.
+Each theme above comes in two variants, dark and light. nightshell, which is simply a collection of scripts (one per theme+variant), is the easiest way to activate one of these themes in the terminal. Instead of a theme configuration file, the theme is activated on startup by having one's shell configuration (e.g. `bashrc`) source the appropriate nightshell script.
 
 nightshell is compatible with the **Linux console** and various **terminal emulators**, including gnome-terminal, roxterm, st, terminator, tilda, tilix, urxvt, xfce4-terminal, and xterm. Terminal **vim** and **neovim** are supported, as are **screen** and **tmux**.
 
