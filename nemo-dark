@@ -20,7 +20,7 @@ if [ "${TERM%%-*}" = 'linux' ]; then
   echo -e "\e]PC7b8194"
   echo -e "\e]PDbac4e0"
   echo -e "\e]PEc9759f"
-  echo -e "\e]PFf5f7ff"
+  echo -e "\e]PFebf0ff"
   echo -e "\e[H"
   echo -e "\e[2J"
   exit 0
@@ -41,7 +41,7 @@ color11="31/3a/54" # Base 02
 color12="7b/81/94" # Base 04
 color13="ba/c4/e0" # Base 06
 color14="c9/75/9f" # Base 0F
-color15="f5/f7/ff" # Base 07 - Bright White
+color15="eb/f0/ff" # Base 07 - Bright White
 color_foreground="9f/a7/bf" # Base 05
 color_background="16/1b/2b" # Base 00
 

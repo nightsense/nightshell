@@ -5,7 +5,7 @@
 
 # linux console
 if [ "${TERM%%-*}" = 'linux' ]; then
-  echo -e "\e]P0f5f7ff"
+  echo -e "\e]P0ebf0ff"
   echo -e "\e]P1f53d3d"
   echo -e "\e]P2009e00"
   echo -e "\e]P3ebca28"
@@ -26,7 +26,7 @@ if [ "${TERM%%-*}" = 'linux' ]; then
   exit 0
 fi
 
-color00="f5/f7/ff" # Base 00 - Black
+color00="eb/f0/ff" # Base 00 - Black
 color01="f5/3d/3d" # Base 08 - Red
 color02="00/9e/00" # Base 0B - Green
 color03="eb/ca/28" # Base 0A - Yellow
@@ -43,7 +43,7 @@ color13="25/2c/40" # Base 06
 color14="eb/4d/9c" # Base 0F
 color15="16/1b/2b" # Base 07 - Bright White
 color_foreground="31/3a/54" # Base 05
-color_background="f5/f7/ff" # Base 00
+color_background="eb/f0/ff" # Base 00
 
 if [ -n "$TMUX" ]; then
   # Tell tmux to pass the escape sequences through
@@ -84,12 +84,12 @@ printf $printf_template 15 $color15
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
   printf $printf_template_custom Pg 313a54 # foreground
-  printf $printf_template_custom Ph f5f7ff # background
+  printf $printf_template_custom Ph ebf0ff # background
   printf $printf_template_custom Pi 313a54 # bold color
   printf $printf_template_custom Pj 7b8194 # selection color
   printf $printf_template_custom Pk 252c40 # selected text color
   printf $printf_template_custom Pl 7b8194 # cursor
-  printf $printf_template_custom Pm f5f7ff # cursor text
+  printf $printf_template_custom Pm ebf0ff # cursor text
 else
   printf $printf_template_var 10 $color_foreground
   printf $printf_template_var 11 $color_background
