@@ -6,20 +6,20 @@
 # linux console
 if [ "${TERM%%-*}" = 'linux' ]; then
   echo -e "\e]P02b2b2b"
-  echo -e "\e]P1d45959"
-  echo -e "\e]P2458a4b"
-  echo -e "\e]P3c9ac55"
-  echo -e "\e]P4387cab"
-  echo -e "\e]P5846a9e"
-  echo -e "\e]P62e8a7a"
+  echo -e "\e]P1e07070"
+  echo -e "\e]P26a9e6a"
+  echo -e "\e]P3bfad51"
+  echo -e "\e]P4659fc9"
+  echo -e "\e]P59f80bf"
+  echo -e "\e]P64f9e91"
   echo -e "\e]P7bfbdb0"
   echo -e "\e]P875746c"
-  echo -e "\e]P9c97b42"
+  echo -e "\e]P9d48c59"
   echo -e "\e]PA403f3d"
   echo -e "\e]PB545451"
   echo -e "\e]PC949288"
   echo -e "\e]PDe0ddce"
-  echo -e "\e]PEc97591"
+  echo -e "\e]PEc9759f"
   echo -e "\e]PFfffceb"
   echo -e "\e[H"
   echo -e "\e[2J"
@@ -27,20 +27,20 @@ if [ "${TERM%%-*}" = 'linux' ]; then
 fi
 
 color00="2b/2b/2b" # Base 00 - Black
-color01="d4/59/59" # Base 08 - Red
-color02="45/8a/4b" # Base 0B - Green
-color03="c9/ac/55" # Base 0A - Yellow
-color04="38/7c/ab" # Base 0D - Blue
-color05="84/6a/9e" # Base 0E - Magenta
-color06="2e/8a/7a" # Base 0C - Cyan
+color01="e0/70/70" # Base 08 - Red
+color02="6a/9e/6a" # Base 0B - Green
+color03="bf/ad/51" # Base 0A - Yellow
+color04="65/9f/c9" # Base 0D - Blue
+color05="9f/80/bf" # Base 0E - Magenta
+color06="4f/9e/91" # Base 0C - Cyan
 color07="bf/bd/b0" # Base 05 - White
 color08="75/74/6c" # Base 03 - Bright Black
-color09="c9/7b/42" # Base 09
+color09="d4/8c/59" # Base 09
 color10="40/3f/3d" # Base 01
 color11="54/54/51" # Base 02
 color12="94/92/88" # Base 04
 color13="e0/dd/ce" # Base 06
-color14="c9/75/91" # Base 0F
+color14="c9/75/9f" # Base 0F
 color15="ff/fc/eb" # Base 07 - Bright White
 color_foreground="bf/bd/b0" # Base 05
 color_background="2b/2b/2b" # Base 00
@@ -88,7 +88,7 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   printf $printf_template_custom Pi bfbdb0 # bold color
   printf $printf_template_custom Pj 75746c # selection color
   printf $printf_template_custom Pk e0ddce # selected text color
-  printf $printf_template_custom Pl c97b42 # cursor
+  printf $printf_template_custom Pl d48c59 # cursor
   printf $printf_template_custom Pm 2b2b2b # cursor text
 else
   printf $printf_template_var 10 $color_foreground
@@ -121,4 +121,4 @@ unset color15
 unset color_foreground
 unset color_background
 
-printf '%b' '\e]12;#c97b42\a' # set cursor colour
+printf '%b' '\e]12;#d48c59\a' # set cursor colour
