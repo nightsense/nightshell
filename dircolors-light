@@ -10,7 +10,7 @@
 # are permitted provided the copyright notice and this notice are preserved.
 
 # directories
-DIR                   01;35    # BOLD for normal directories
+DIR                   01;34    # BOLD for normal directories
 STICKY_OTHER_WRITABLE 01;32;42 # GREEN BG for sticky, other-writable dirs
 OTHER_WRITABLE        01;35;46 # TEAL BG for non-sticky, other-writable dirs
 STICKY                01;32;44 # BLUE BG for sticky, non-other-writable dirs
@@ -22,8 +22,8 @@ CAPABILITY            30;41    # RED BG for files with capability
 
 # links
 MULTIHARDLINK         04;37    # NORMAL UNDERLINED for multihardlink files
-LINK                  01;30    # NORMAL FADED for symlinks
-ORPHAN                00;31    # RED for symlinks to nonexistent files
+LINK                  04;37    # NORMAL UNDERLINED for symlinks
+ORPHAN                04;31    # RED UNDERLINED for symlinks to absent files
 
 # special filetypes
 FIFO                  00;35    # PURPLE for pipes
