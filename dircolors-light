@@ -1,0 +1,160 @@
+# customized dircolors for nightshell
+# ===================================
+#
+# This file defines a custom "ls theme" (that is, the colours used by the `ls`
+# command for distinguishing filetypes). The default "theme file" can be viewed
+# at https://git.io/vdKm8.
+#
+# Copyright (C) 1996-2017 Free Software Foundation, Inc.
+# Copying and distribution of this file, with or without modification,
+# are permitted provided the copyright notice and this notice are preserved.
+
+# directories
+DIR                   01;35    # BOLD for normal directories
+STICKY_OTHER_WRITABLE 01;32;42 # GREEN BG for sticky, other-writable dirs
+OTHER_WRITABLE        01;35;46 # TEAL BG for non-sticky, other-writable dirs
+STICKY                01;32;44 # BLUE BG for sticky, non-other-writable dirs
+
+# files with special permissions
+SETUID                30;45    # PURPLE BG for files that are setuid (u+s)
+SETGID                37;43    # YELLOW BG for files that are setgid (g+s)
+CAPABILITY            30;41    # RED BG for files with capability
+
+# links
+MULTIHARDLINK         04;37    # NORMAL UNDERLINED for multihardlink files
+LINK                  01;30    # NORMAL FADED for symlinks
+ORPHAN                00;31    # RED for symlinks to nonexistent files
+
+# special filetypes
+FIFO                  00;35    # PURPLE for pipes
+SOCK                  01;36    # PINK for sockets
+DOOR                  01;36    # PINK for doors
+BLK                   30;47    # NORMAL BG for block device drivers
+CHR                   30;47    # NORMAL BG for character device drivers
+
+# GREEN for executables (since green = "go")
+.bat   00;32
+.btm   00;32
+.cmd   00;32
+.com   00;32
+.csh   00;32
+.exe   00;32
+.fish  00;32
+.sh    00;32
+EXEC   00;32
+
+# ORANGE for archives (a "preliminary form" of data waiting for extraction)
+.7z    01;31
+.Z     01;31
+.ace   01;31
+.alz   01;31
+.arc   01;31
+.arj   01;31
+.bz    01;31
+.bz2   01;31
+.cab   01;31
+.cpio  01;31
+.deb   01;31
+.dwm   01;31
+.dz    01;31
+.ear   01;31
+.esd   01;31
+.gz    01;31
+.jar   01;31
+.lha   01;31
+.lrz   01;31
+.lz    01;31
+.lz4   01;31
+.lzh   01;31
+.lzma  01;31
+.lzo   01;31
+.rar   01;31
+.rpm   01;31
+.rz    01;31
+.sar   01;31
+.swm   01;31
+.t7z   01;31
+.tar   01;31
+.taz   01;31
+.tbz   01;31
+.tbz2  01;31
+.tgz   01;31
+.tlz   01;31
+.txz   01;31
+.tz    01;31
+.tzo   01;31
+.tzst  01;31
+.war   01;31
+.wim   01;31
+.xz    01;31
+.z     01;31
+.zip   01;31
+.zoo   01;31
+.zst   01;31
+
+# BLUE for multimedia (since works of art are constants we can rely on)
+.aac   00;34
+.asf   00;34
+.au    00;34
+.avi   00;34
+.bmp   00;34
+.cgm   00;34
+.dl    00;34
+.emf   00;34
+.flac  00;34
+.flc   00;34
+.fli   00;34
+.flv   00;34
+.gif   00;34
+.gl    00;34
+.jpeg  00;34
+.jpg   00;34
+.m2v   00;34
+.m4a   00;34
+.m4v   00;34
+.mid   00;34
+.midi  00;34
+.mjpeg 00;34
+.mjpg  00;34
+.mka   00;34
+.mkv   00;34
+.mng   00;34
+.mov   00;34
+.mp3   00;34
+.mp4   00;34
+.mp4v  00;34
+.mpc   00;34
+.mpeg  00;34
+.mpg   00;34
+.nuv   00;34
+.oga   00;34
+.ogg   00;34
+.ogm   00;34
+.ogv   00;34
+.ogx   00;34
+.opus  00;34
+.pbm   00;34
+.pcx   00;34
+.pgm   00;34
+.png   00;34
+.ppm   00;34
+.qt    00;34
+.ra    00;34
+.rm    00;34
+.rmvb  00;34
+.spx   00;34
+.svg   00;34
+.svgz  00;34
+.tga   00;34
+.tif   00;34
+.tiff  00;34
+.vob   00;34
+.wav   00;34
+.webm  00;34
+.wmv   00;34
+.xbm   00;34
+.xcf   00;34
+.xpm   00;34
+.xspf  00;34
+.xwd   00;34
+.yuv   00;34

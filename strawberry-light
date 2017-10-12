@@ -121,4 +121,8 @@ unset color15
 unset color_foreground
 unset color_background
 
-printf '%b' '\e]12;#eb4d9c\a' # set cursor colour
+# set cursor colour
+printf '%b' '\e]12;#eb4d9c\a'
+
+# load dircolors
+eval $(dircolors -c ~/.nightshell/dircolors-light)
