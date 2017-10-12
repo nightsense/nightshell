@@ -29,7 +29,7 @@ git clone https://github.com/nightsense/nightshell ~/.nightshell
 
 When updates are made to this repository, **upgrade nightshell** by navigating to `~/.nightshell` and running `git pull`.
 
-With nightshell installed, you can **list available themes** by running `ls ~/.nightshell | grep -Ev 'README|dircolors*'`.
+With nightshell installed, you can **list available themes** by running `ls ~/.nightshell | grep -Ev 'README|dircolors'`.
 
 ## step 2 - shell configuration
 
@@ -61,22 +61,34 @@ if status --is-interactive; sh ~/.nightshell/THEME; end
 
 ## step 3 (optional) - dircolors
 
-`dircolors` is essentially a colourscheme for the `ls` command, defining which colours are used for distinguishing filetypes. nightshell features a customized `dircolors` in dark and light variants.
+`dircolors` is essentially a colourscheme for the `ls` command, defining which colours are used for distinguishing filetypes.  To use nightshell's custom version of `dircolors`:
 
-To use nightshell's `dircolors`:
+
+> ### colour logic
+>
+> - **directories** are **bold**, reflecting their "expanded" role as a "file that contains files"
+>   - **normal directories** use the normal text colour
+>   - **"sticky" directories** are **pink**, like sticky bubble gum
+>   - **"other-writable" directories** are **orange**, as though warmed by the heat of writing activity
+>   - directories that are **both** "sticky" and "other-writable" are **orange and underlined**: heated up with a "stick" underneath
+> - **links** are underlined, like hyperlinks on the internet
+>   - this applies to both **multi-hardlinked files** and **symlinks**
+>   - links use the normal text colour except for **orphan links** (symlinks that point to non-existent files), which are red (the colour of warning)
+> - **device driver files** are **highlighted** with the normal text colour; since this colour is grey (or greyish), these highlighted blocks of texts resemble the grey, boxy form taken by many technological devices
+> - **IPC files** are **blue-highlighted**, since they enable information to flow between processes like water
+> - **setuid files** (u+s) are **purple-highlighted**: p**u**rple = **u**ser
+> - **setgid files** (g+s) are **green-highlighted**: **g**reen = **g**roup
+> - files that use **capabilities** are **red-highlighted**: red = red-blooded = capable
+> - **executable files** are **green**, since green = "go ahead, proceed with action"
+> - **archive files** are **purple**, since purple is the colour of famous dyes made from sea snails, which are happily packed into shells (until someone decides to make dye out of them)
+> - **multimedia files** are **blue**, since blue conveys calm, enduring stability (like the sea and sky), just like the great works of art (images, music, video) we can rely on
 
 ### bash/zsh
 
 To `~/.bashrc` or `~/.zshrc`, add:
 
 ```
-eval `dircolors ~/.nightshell/dircolors-dark`
-```
-
-or
-
-```
-eval `dircolors ~/.nightshell/dircolors-light`
+eval `dircolors ~/.nightshell/dircolors`
 ```
 
 ### fish
@@ -84,13 +96,7 @@ eval `dircolors ~/.nightshell/dircolors-light`
 To `~/.config/fish/config.fish`, add:
 
 ```
-eval (dircolors -c ~/.nightshell/dircolors-dark)
-```
-
-or
-
-```
-eval (dircolors -c ~/.nightshell/dircolors-light)
+eval (dircolors -c ~/.nightshell/dircolors)
 ```
 
 ## terminal vim

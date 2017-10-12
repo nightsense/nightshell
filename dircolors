@@ -1,0 +1,178 @@
+# customized dircolors for nightshell
+# ===================================
+#
+# This file defines a custom "ls theme" (that is, the colours used by the `ls`
+# command for distinguishing filetypes). The original "ls theme file", of which
+# this is a modified version, can be viewed at https://git.io/vdKm8.
+#
+# Copyright (C) 1996-2017 Free Software Foundation, Inc.
+# Copying and distribution of this file, with or without modification,
+# are permitted provided the copyright notice and this notice are preserved.
+
+
+#=== BY GENERAL TYPE =====================================================
+
+# BOLD normal directories
+DIR                   01;34
+
+# PINK BOLD dirs with sticky bit (pink = gum = sticky)
+STICKY                01;36
+
+# ORANGE BOLD dirs with "other-writable" bit (orange = fire = heat of writing)
+OTHER_WRITABLE        01;31
+
+# ORANGE BOLD UNDERLINED dirs with both bits (orange heat + "stick" underneath)
+STICKY_OTHER_WRITABLE 01;04;31
+
+# UNDERLINED links (RED UNDERLINED orphans)
+MULTIHARDLINK         04;37
+LINK                  04;37
+ORPHAN                04;31
+
+# HIGHLIGHTED device driver files (highlighted blocks = block-shaped devices)
+BLK                   30;47
+CHR                   30;47
+
+# BLUE-HIGHLIGHTED IPC files (blue = water = flowing communication)
+FIFO                  30;44
+SOCK                  30;44
+DOOR                  30;44
+
+# PURPLE-HIGHLIGHTED setuid (u+s) files: p[u]rple = [u]ser
+SETUID                30;45
+
+# GREEN-HIGHLIGHTED setgid (g+s) files: [g]reen = [g]roup
+SETGID                30;42
+
+# RED-HIGHLIGHTED files with capability: red = red-blooded = capable
+CAPABILITY            30;41
+
+
+#=== BY FILE EXTENSION =====================================================
+
+# GREEN for executables (since green = "go")
+.bat   00;32
+.btm   00;32
+.cmd   00;32
+.com   00;32
+.csh   00;32
+.exe   00;32
+.fish  00;32
+.sh    00;32
+EXEC   00;32
+
+# PURPLE for archives (since they are "special files" waiting for extraction)
+.7z    00;35
+.Z     00;35
+.ace   00;35
+.alz   00;35
+.arc   00;35
+.arj   00;35
+.bz    00;35
+.bz2   00;35
+.cab   00;35
+.cpio  00;35
+.deb   00;35
+.dwm   00;35
+.dz    00;35
+.ear   00;35
+.esd   00;35
+.gz    00;35
+.jar   00;35
+.lha   00;35
+.lrz   00;35
+.lz    00;35
+.lz4   00;35
+.lzh   00;35
+.lzma  00;35
+.lzo   00;35
+.rar   00;35
+.rpm   00;35
+.rz    00;35
+.sar   00;35
+.swm   00;35
+.t7z   00;35
+.tar   00;35
+.taz   00;35
+.tbz   00;35
+.tbz2  00;35
+.tgz   00;35
+.tlz   00;35
+.txz   00;35
+.tz    00;35
+.tzo   00;35
+.tzst  00;35
+.war   00;35
+.wim   00;35
+.xz    00;35
+.z     00;35
+.zip   00;35
+.zoo   00;35
+.zst   00;35
+
+# BLUE for multimedia (since works of art are "constants" we can rely on)
+.aac   00;34
+.asf   00;34
+.au    00;34
+.avi   00;34
+.bmp   00;34
+.cgm   00;34
+.dl    00;34
+.emf   00;34
+.flac  00;34
+.flc   00;34
+.fli   00;34
+.flv   00;34
+.gif   00;34
+.gl    00;34
+.jpeg  00;34
+.jpg   00;34
+.m2v   00;34
+.m4a   00;34
+.m4v   00;34
+.mid   00;34
+.midi  00;34
+.mjpeg 00;34
+.mjpg  00;34
+.mka   00;34
+.mkv   00;34
+.mng   00;34
+.mov   00;34
+.mp3   00;34
+.mp4   00;34
+.mp4v  00;34
+.mpc   00;34
+.mpeg  00;34
+.mpg   00;34
+.nuv   00;34
+.oga   00;34
+.ogg   00;34
+.ogm   00;34
+.ogv   00;34
+.ogx   00;34
+.opus  00;34
+.pbm   00;34
+.pcx   00;34
+.pgm   00;34
+.png   00;34
+.ppm   00;34
+.qt    00;34
+.ra    00;34
+.rm    00;34
+.rmvb  00;34
+.spx   00;34
+.svg   00;34
+.svgz  00;34
+.tga   00;34
+.tif   00;34
+.tiff  00;34
+.vob   00;34
+.wav   00;34
+.webm  00;34
+.wmv   00;34
+.xbm   00;34
+.xcf   00;34
+.xpm   00;34
+.xspf  00;34
+.xwd   00;34
+.yuv   00;34
