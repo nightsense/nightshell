@@ -70,13 +70,13 @@ To use nightshell's `dircolors`:
 To `~/.bashrc` or `~/.zshrc`, add:
 
 ```
-eval `~/.nightshell/dircolors-dark`
+eval `dircolors ~/.nightshell/dircolors-dark`
 ```
 
 or
 
 ```
-eval `~/.nightshell/dircolors-light`
+eval `dircolors ~/.nightshell/dircolors-light`
 ```
 
 ### fish
