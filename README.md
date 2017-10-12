@@ -88,7 +88,7 @@ eval (dircolors -c ~/.nightshell/dircolors)
 >   - directories that are **both** "sticky" and "other-writable" are **orange and underlined**: the orange is warmth, while the underline is a "stick"
 > - **links** are underlined, like hyperlinks on the internet
 >   - this applies to both **multi-hardlinked files** and **symlinks**
->   - links use the normal text colour except for **orphan links** (symlinks that point to non-existent files), which are red (the colour of warning)
+>   - links use the normal text colour except for **orphan links** (symlinks that point to non-existent files), which are **red** (the colour of warning)
 > - **device driver files** are **highlighted** with the normal text colour; since this colour is grey (or greyish), these highlighted blocks of texts resemble the grey, boxy form taken by many technological devices
 > - **IPC files** are **blue-highlighted**, since they enable information to flow between processes like water
 > - **setuid files** (u+s) are **purple-highlighted**: p**u**rple = **u**ser
