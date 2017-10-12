@@ -29,7 +29,7 @@ git clone https://github.com/nightsense/nightshell ~/.nightshell
 
 When updates are made to this repository, **upgrade nightshell** by navigating to `~/.nightshell` and running `git pull`.
 
-With nightshell installed, you can **list available themes** by running `ls ~/.nightshell | grep -v README`.
+With nightshell installed, you can **list available themes** by running `ls ~/.nightshell | grep -Ev 'README|dircolors*'`.
 
 ## step 2 - shell configuration
 
