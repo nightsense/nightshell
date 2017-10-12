@@ -9,9 +9,6 @@
 # Copying and distribution of this file, with or without modification,
 # are permitted provided the copyright notice and this notice are preserved.
 
-
-#=== BY GENERAL TYPE =====================================================
-
 # BOLD normal directories
 DIR                   01;34
 
@@ -47,10 +44,7 @@ SETGID                30;42
 # RED-HIGHLIGHTED files with capability: red = red-blooded = capable
 CAPABILITY            30;41
 
-
-#=== BY FILE EXTENSION =====================================================
-
-# GREEN for executables (since green = "go")
+# GREEN executables (since green = "go ahead, proceed with action")
 .bat   00;32
 .btm   00;32
 .cmd   00;32
@@ -61,7 +55,7 @@ CAPABILITY            30;41
 .sh    00;32
 EXEC   00;32
 
-# PURPLE for archives (since they are "special files" waiting for extraction)
+# PURPLE archives (purple dye > snails > packed in shells > archives)
 .7z    00;35
 .Z     00;35
 .ace   00;35
@@ -110,7 +104,7 @@ EXEC   00;32
 .zoo   00;35
 .zst   00;35
 
-# BLUE for multimedia (since works of art are "constants" we can rely on)
+# BLUE multimedia files (since blue = sea/sky = enduring, like great artworks)
 .aac   00;34
 .asf   00;34
 .au    00;34
