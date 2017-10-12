@@ -65,7 +65,7 @@ if status --is-interactive; sh ~/.nightshell/THEME; end
 
 ### bash/zsh
 
-To `~/.bashrc` or `~/.zshrc`, add:
+Add the following to `~/.bashrc` or `~/.zshrc`:
 
 ```
 eval `dircolors ~/.nightshell/dircolors`
@@ -73,7 +73,7 @@ eval `dircolors ~/.nightshell/dircolors`
 
 ### fish
 
-To `~/.config/fish/config.fish`, add:
+Add the following to `~/.config/fish/config.fish`:
 
 ```
 eval (dircolors -c ~/.nightshell/dircolors)
