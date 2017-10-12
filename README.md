@@ -87,7 +87,7 @@ eval (dircolors -c ~/.nightshell/dircolors)
 >   - **normal directories** use the normal text colour
 >   - **"sticky" directories** are **pink**, like sticky bubble gum
 >   - **"other-writable" directories** are **orange**, as though warmed by the heat of writing activity
->   - directories that are **both** "sticky" and "other-writable" are **orange and underlined**: the orange is warmth, while the underline is a "stick"
+>   - directories that are **both** "sticky" and "other-writable" are **orange and underlined**: the orange is writing-warmth, while the underline is a "stick"
 > - **links** are underlined, like hyperlinks on the internet
 >   - this applies to both **multi-hardlinked files** and **symlinks**
 >   - links use the normal text colour except for **orphan links** (symlinks that point to non-existent files), which are **red** (the colour of warning)
