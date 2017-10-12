@@ -63,8 +63,23 @@ if status --is-interactive; sh ~/.nightshell/THEME; end
 
 `dircolors` is essentially a colourscheme for the `ls` command, defining which colours are used for distinguishing filetypes.  To use nightshell's custom version of `dircolors`:
 
+### bash/zsh
 
-> ### colour logic
+To `~/.bashrc` or `~/.zshrc`, add:
+
+```
+eval `dircolors ~/.nightshell/dircolors`
+```
+
+### fish
+
+To `~/.config/fish/config.fish`, add:
+
+```
+eval (dircolors -c ~/.nightshell/dircolors)
+```
+
+> ### nightshell dircolors logic
 >
 > - **directories** are **bold**, reflecting their "expanded" role as a "file that contains files"
 >   - **normal directories** use the normal text colour
@@ -82,22 +97,6 @@ if status --is-interactive; sh ~/.nightshell/THEME; end
 > - **executable files** are **green**, since green = "go ahead, proceed with action"
 > - **archive files** are **purple**, since purple is the colour of famous dyes made from sea snails, which are happily packed into shells (until someone decides to make dye out of them)
 > - **multimedia files** are **blue**, since blue conveys calm, enduring stability (like the sea and sky), just like the great works of art (images, music, video) we can rely on
-
-### bash/zsh
-
-To `~/.bashrc` or `~/.zshrc`, add:
-
-```
-eval `dircolors ~/.nightshell/dircolors`
-```
-
-### fish
-
-To `~/.config/fish/config.fish`, add:
-
-```
-eval (dircolors -c ~/.nightshell/dircolors)
-```
 
 ## terminal vim
 
