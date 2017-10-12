@@ -63,7 +63,7 @@ if status --is-interactive; sh ~/.nightshell/THEME; end
 
 `dircolors` is essentially a colourscheme for the `ls` command, defining which colours are used for distinguishing filetypes. nightshell features a customized `dircolors` in dark and light variants.
 
-To use nightshell `dircolors`:
+To use nightshell's `dircolors`:
 
 ### bash/zsh
 
