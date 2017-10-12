@@ -59,7 +59,41 @@ if status --is-interactive; sh ~/.nightshell/THEME; end
 
 ...replacing `THEME` with the desired colourscheme (e.g. `sh ~/.nightshell/carbonized-light`).
 
-## step 3 - terminal vim
+## step 3 (optional) - dircolors
+
+The `dircolors` file defines the colours used by `ls` for distinguishing filetypes. nightshell comes with a customized version of `dircolors` in dark and light variants.
+
+To use nightshell `dircolors`:
+
+### bash/zsh
+
+To `~/.bashrc` or `~/.zshrc`, add:
+
+```
+eval `~/.nightshell/dircolors-dark`
+```
+
+or
+
+```
+eval `~/.nightshell/dircolors-light`
+```
+
+### fish
+
+To `~/.config/fish/config.fish`, add:
+
+```
+eval (dircolors -c ~/.nightshell/dircolors-dark)
+```
+
+or
+
+```
+eval (dircolors -c ~/.nightshell/dircolors-light)
+```
+
+## terminal vim
 
 Once you've installed this repository (step 1), your nightsense-designed vim theme should work in terminal vim (provided the terminal application is compatible). The vim theme file will automatically run the appropriate script in `~/.nightshell/`.
 
