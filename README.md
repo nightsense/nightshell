@@ -61,7 +61,7 @@ if status --is-interactive; sh ~/.nightshell/THEME; end
 
 ## step 3 (optional) - dircolors
 
-The `dircolors` file defines the colours used by `ls` for distinguishing filetypes. nightshell comes with a customized version of `dircolors` in dark and light variants.
+`dircolors` is essentially a colourscheme for the `ls` command, defining which colours are used for distinguishing filetypes. nightshell features a customized `dircolors` in dark and light variants.
 
 To use nightshell `dircolors`:
 
