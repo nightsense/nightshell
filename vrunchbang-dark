@@ -125,4 +125,4 @@ unset color_background
 printf '%b' '\e]12;#bfbfbf\a'
 
 # load dircolors
-eval $(dircolors -c ~/.nightshell/dircolors-dark)
+eval `dircolors ~/.nightshell/dircolors-dark`
