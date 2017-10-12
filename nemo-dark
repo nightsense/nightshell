@@ -123,6 +123,3 @@ unset color_background
 
 # set cursor colour
 printf '%b' '\e]12;#7b8194\a'
-
-# load dircolors
-eval `dircolors ~/.nightshell/dircolors-dark`
