@@ -79,6 +79,8 @@ Add the following to `~/.config/fish/config.fish`:
 eval (dircolors -c ~/.nightshell/dircolors)
 ```
 
+<br>
+
 > ### nightshell dircolors logic
 >
 > - **directories** are **bold**, reflecting their "expanded" role as a "file that contains files"
