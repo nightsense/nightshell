@@ -100,6 +100,16 @@ eval (dircolors -c ~/.nightshell/dircolors)
 > - **archive files** are **purple**, since purple is the colour of famous dyes made from sea snails, which are happily packed into shells (until someone decides to make dye out of them)
 > - **multimedia files** are **blue**, since blue conveys calm, enduring stability (like the sea and sky), just like the great works of art (images, music, video) we can rely on
 
+## step 4 (optional) - fish shell theme
+
+Each nightshell theme comes with a matching **fish** theme, which can be activated by adding the following to `~/.config/fish/config.fish`:
+
+```
+fish ~/.nightshell/fish/THEME
+```
+
+...replacing `THEME` with the desired colourscheme (e.g. `fish ~/.nightshell/fish/carbonized-light`).
+
 ## terminal vim
 
 Once you've installed this repository (step 1), your nightsense-designed vim theme should work in terminal vim (provided the terminal application is compatible). The vim theme file will automatically run the appropriate script in `~/.nightshell/`.
