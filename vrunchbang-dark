@@ -3,6 +3,38 @@
 # generated with a template adapted from
 # Base16 Shell template by Chris Kempson (http://chriskempson.com)
 
+if $SHELL | sed 's#.*/##' | grep '^fish$'
+
+# set fish colours
+set fish_color_autosuggestion 'd48c59'
+set fish_color_command '6a9e6a'
+set fish_color_comment '707e82'
+set fish_color_cwd 'c9759f'
+set fish_color_cwd_root 'e07070'
+set fish_color_end '6a9e6a'
+set fish_color_error 'e07070'
+set fish_color_escape '9f80bf'
+set fish_color_history_current '2e3436' --background='bfad51'
+set fish_color_host normal
+set fish_color_match 'd48c59'
+set fish_color_normal normal
+set fish_color_operator '659fc9'
+set fish_color_param '659fc9'
+set fish_color_quote '6a9e6a'
+set fish_color_redirection '6a9e6a'
+set fish_color_search_match '2e3436' --background='bfad51'
+set fish_color_selection '2e3436' --background='e0e0e0'
+set fish_color_user normal
+set fish_color_valid_path --underline
+set fish_pager_color_completion normal
+set fish_pager_color_description '707e82'
+set fish_pager_color_prefix 'd48c59'
+set fish_pager_color_progress 'd48c59'
+
+sh ~/.nightshell/vrunchbang-dark
+
+else
+
 # linux console
 if [ "${TERM%%-*}" = 'linux' ]; then
   echo -e "\e]P02e3436"
@@ -11,7 +43,7 @@ if [ "${TERM%%-*}" = 'linux' ]; then
   echo -e "\e]P3bfad51"
   echo -e "\e]P4659fc9"
   echo -e "\e]P59f80bf"
-  echo -e "\e]P64f9e91"
+  echo -e "\e]P65c9e93"
   echo -e "\e]P7bfbfbf"
   echo -e "\e]P8707e82"
   echo -e "\e]P9d48c59"
@@ -32,7 +64,7 @@ color02="6a/9e/6a" # Base 0B - Green
 color03="bf/ad/51" # Base 0A - Yellow
 color04="65/9f/c9" # Base 0D - Blue
 color05="9f/80/bf" # Base 0E - Magenta
-color06="4f/9e/91" # Base 0C - Cyan
+color06="5c/9e/93" # Base 0C - Cyan
 color07="bf/bf/bf" # Base 05 - White
 color08="70/7e/82" # Base 03 - Bright Black
 color09="d4/8c/59" # Base 09
