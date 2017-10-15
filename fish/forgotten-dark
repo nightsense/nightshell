@@ -1,4 +1,3 @@
-#!/bin/sh
 # forgotten-dark, a fish shell theme by nightsense
 
 set fish_color_autosuggestion 'd48c59'
