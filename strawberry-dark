@@ -3,38 +3,6 @@
 # generated with a template adapted from
 # Base16 Shell template by Chris Kempson (http://chriskempson.com)
 
-if $SHELL | sed 's#.*/##' | grep '^fish$'
-
-# set fish colours
-set fish_color_autosuggestion 'd48c59'
-set fish_color_command '6a9e6a'
-set fish_color_comment '75616b'
-set fish_color_cwd 'c9759f'
-set fish_color_cwd_root 'e07070'
-set fish_color_end '6a9e6a'
-set fish_color_error 'e07070'
-set fish_color_escape '9f80bf'
-set fish_color_history_current '2b121f' --background='bfad51'
-set fish_color_host normal
-set fish_color_match 'd48c59'
-set fish_color_normal normal
-set fish_color_operator '659fc9'
-set fish_color_param '659fc9'
-set fish_color_quote '6a9e6a'
-set fish_color_redirection '6a9e6a'
-set fish_color_search_match '2b121f' --background='bfad51'
-set fish_color_selection '2b121f' --background='e0c5d3'
-set fish_color_user normal
-set fish_color_valid_path --underline
-set fish_pager_color_completion normal
-set fish_pager_color_description '75616b'
-set fish_pager_color_prefix 'd48c59'
-set fish_pager_color_progress 'd48c59'
-
-sh ~/.nightshell/strawberry-dark
-
-else
-
 # linux console
 if [ "${TERM%%-*}" = 'linux' ]; then
   echo -e "\e]P02b121f"
