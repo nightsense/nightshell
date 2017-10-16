@@ -102,13 +102,11 @@ eval (dircolors -c ~/.nightshell/dircolors)
 
 ## step 4 (optional) - fish shell theme
 
-Each nightshell theme comes with a matching **fish** theme, which can be activated by adding the following to `~/.config/fish/config.fish`:
+The custom nightshell **fish** theme can be activated by adding the following to `~/.config/fish/config.fish`:
 
 ```
-source ~/.nightshell/fish/THEME
+source ~/.nightshell/fish
 ```
-
-...replacing `THEME` with the desired colourscheme (e.g. `source ~/.nightshell/fish/carbonized-light`).
 
 ## terminal vim
 
