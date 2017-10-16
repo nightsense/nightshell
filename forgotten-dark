@@ -6,7 +6,7 @@
 # linux console
 if [ "${TERM%%-*}" = 'linux' ]; then
   echo -e "\e]P01d252b"
-  echo -e "\e]P1eb7f75"
+  echo -e "\e]P1eb6e63"
   echo -e "\e]P25c9e61"
   echo -e "\e]P3c9b755"
   echo -e "\e]P46f9ebf"
@@ -19,7 +19,7 @@ if [ "${TERM%%-*}" = 'linux' ]; then
   echo -e "\e]PB3f4b54"
   echo -e "\e]PC8e9194"
   echo -e "\e]PDd7dde0"
-  echo -e "\e]PEc997a8"
+  echo -e "\e]PEc9879d"
   echo -e "\e]PFf5fbff"
   echo -e "\e[H"
   echo -e "\e[2J"
@@ -27,7 +27,7 @@ if [ "${TERM%%-*}" = 'linux' ]; then
 fi
 
 color00="1d/25/2b" # Base 00 - Black
-color01="eb/7f/75" # Base 08 - Red
+color01="eb/6e/63" # Base 08 - Red
 color02="5c/9e/61" # Base 0B - Green
 color03="c9/b7/55" # Base 0A - Yellow
 color04="6f/9e/bf" # Base 0D - Blue
@@ -40,7 +40,7 @@ color10="30/39/40" # Base 01
 color11="3f/4b/54" # Base 02
 color12="8e/91/94" # Base 04
 color13="d7/dd/e0" # Base 06
-color14="c9/97/a8" # Base 0F
+color14="c9/87/9d" # Base 0F
 color15="f5/fb/ff" # Base 07 - Bright White
 color_foreground="b8/bc/bf" # Base 05
 color_background="1d/25/2b" # Base 00
@@ -88,7 +88,7 @@ if [ -n "$ITERM_SESSION_ID" ]; then
   printf $printf_template_custom Pi b8bcbf # bold color
   printf $printf_template_custom Pj 6c7175 # selection color
   printf $printf_template_custom Pk d7dde0 # selected text color
-  printf $printf_template_custom Pl eb7f75 # cursor
+  printf $printf_template_custom Pl eb6e63 # cursor
   printf $printf_template_custom Pm 1d252b # cursor text
 else
   printf $printf_template_var 10 $color_foreground
@@ -122,4 +122,4 @@ unset color_foreground
 unset color_background
 
 # set cursor colour
-printf '%b' '\e]12;#eb7f75\a'
+printf '%b' '\e]12;#eb6e63\a'
