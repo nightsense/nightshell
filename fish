@@ -11,7 +11,7 @@ set fish_color_user              normal
 set fish_pager_color_completion  normal
 set fish_pager_color_description normal
 
-# UNDERLINED text for valid paths
+# UNDERLINED text for current history entries and valid paths
 set fish_color_valid_path        --underline
 
 # RED for things that say "stop here" or "look out"
@@ -21,7 +21,6 @@ set fish_color_error             red
 set fish_color_match             red
 
 # YELLOW HIGHLIGHTING for matches/selections
-set fish_color_history_current   --background=yellow
 set fish_color_search_match      --background=yellow
 set fish_color_selection         --background=yellow
 
@@ -32,8 +31,9 @@ set fish_color_command           green
 set fish_color_operator          cyan
 set fish_color_param             cyan
 
-# BLUE text for current "waters" (cwd) and quotes (rivers flowing between "")
+# BLUE for "current waters" (cwd, history) and quotes (rivers between "" banks)
 set fish_color_cwd               blue
+set fish_color_history_current   blue
 set fish_color_quote             blue
 
 # PURPLE for [p]otential autosuggestions, completion [p]refixes, and [p]rogress
