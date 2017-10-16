@@ -120,6 +120,3 @@ unset color14
 unset color15
 unset color_foreground
 unset color_background
-
-# set cursor colour
-printf '%b' '\e]12;#888f94\a'
