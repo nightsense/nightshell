@@ -21,9 +21,9 @@ set fish_color_error             red
 set fish_color_match             red
 
 # YELLOW HIGHLIGHTING for matches/selections
-set fish_color_history_current   black --background=yellow
-set fish_color_search_match      black --background=yellow
-set fish_color_selection         black --background=yellow
+set fish_color_history_current   --background=yellow
+set fish_color_search_match      --background=yellow
+set fish_color_selection         --background=yellow
 
 # GREEN text for commands (things that say "go ahead and...")
 set fish_color_command           green
