@@ -4,7 +4,7 @@
 
 theme | screenshots
 :----:|:----------:
-[carbonized](https://github.com/nightsense/carbonized) | <img src="/img/screenshot-carbonized-dark.png" alt="screenshot of the carbonized-dark vim theme" width="144" /><img src="/img/screenshot-carbonized-light.png" alt="screenshot of the carbonized-light vim theme" width="144" />
+[carbonized](https://github.com/nightsense/carbonized) | <img src="/img/screenshot-carbonized-dark.png" alt="screenshot of the carbonized-dark vim theme" width="72" /><img src="/img/screenshot-carbonized-light.png" alt="screenshot of the carbonized-light vim theme" width="72" />
 [forgotten](https://github.com/nightsense/forgotten)   |
 [nemo](https://github.com/nightsense/nemo)             |
 [office](https://github.com/nightsense/office)         |
