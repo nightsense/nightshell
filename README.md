@@ -5,14 +5,14 @@
 theme | screenshots
 :----:|:----------:
 [carbonized](https://github.com/nightsense/carbonized) | <img src="/img/screenshot-carbonized-dark.png" alt="screenshot of the carbonized-dark vim theme" width="72" /><img src="/img/screenshot-carbonized-light.png" alt="screenshot of the carbonized-light vim theme" width="72" />
-[forgotten](https://github.com/nightsense/forgotten)   |
-[nemo](https://github.com/nightsense/nemo)             |
-[office](https://github.com/nightsense/office)         |
-[plumber](https://github.com/nightsense/plumber)       |
-[seagrey](https://github.com/nightsense/seagrey)       |
-[strawberry](https://github.com/nightsense/strawberry) |
-[vrunchbang](https://github.com/nightsense/vrunchbang) |
-[wonka](https://github.com/nightsense/wonka)           |
+[forgotten](https://github.com/nightsense/forgotten)   |<img src="/img/screenshot-forgotten-dark.png" alt="screenshot of the forgotten-dark vim theme" width="72" /><img src="/img/screenshot-forgotten-light.png" alt="screenshot of the forgotten-light vim theme" width="72" />
+[nemo](https://github.com/nightsense/nemo)             |<img src="/img/screenshot-nemo-dark.png" alt="screenshot of the nemo-dark vim theme" width="72" /><img src="/img/screenshot-nemo-light.png" alt="screenshot of the nemo-light vim theme" width="72" />
+[office](https://github.com/nightsense/office)         |<img src="/img/screenshot-office-dark.png" alt="screenshot of the office-dark vim theme" width="72" /><img src="/img/screenshot-office-light.png" alt="screenshot of the office-light vim theme" width="72" />
+[plumber](https://github.com/nightsense/plumber)       |<img src="/img/screenshot-plumber-dark.png" alt="screenshot of the plumber-dark vim theme" width="72" /><img src="/img/screenshot-plumber-light.png" alt="screenshot of the plumber-light vim theme" width="72" />
+[seagrey](https://github.com/nightsense/seagrey)       |<img src="/img/screenshot-seagrey-dark.png" alt="screenshot of the seagrey-dark vim theme" width="72" /><img src="/img/screenshot-seagrey-light.png" alt="screenshot of the seagrey-light vim theme" width="72" />
+[strawberry](https://github.com/nightsense/strawberry) |<img src="/img/screenshot-strawberry-dark.png" alt="screenshot of the strawberry-dark vim theme" width="72" /><img src="/img/screenshot-strawberry-light.png" alt="screenshot of the strawberry-light vim theme" width="72" />
+[vrunchbang](https://github.com/nightsense/vrunchbang) |<img src="/img/screenshot-vrunchbang-dark.png" alt="screenshot of the vrunchbang-dark vim theme" width="72" /><img src="/img/screenshot-vrunchbang-light.png" alt="screenshot of the vrunchbang-light vim theme" width="72" />
+[wonka](https://github.com/nightsense/wonka)           |<img src="/img/screenshot-wonka-dark.png" alt="screenshot of the wonka-dark vim theme" width="72" /><img src="/img/screenshot-wonka-light.png" alt="screenshot of the wonka-light vim theme" width="72" />
 
 Each theme above comes in two variants, dark and light. nightshell, which is simply a collection of scripts (one per theme+variant), is the easiest way to activate one of these themes in the terminal. Instead of a theme configuration file, the theme is activated on startup by having one's shell configuration (e.g. `bashrc`) source the appropriate nightshell script.
 
