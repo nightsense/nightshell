@@ -2,15 +2,17 @@
 
 **Terminal theme setter** for the "nightsense theme family". Namely:
 
-- [carbonized](https://github.com/nightsense/carbonized)
-- [forgotten](https://github.com/nightsense/forgotten)
-- [nemo](https://github.com/nightsense/nemo)
-- [office](https://github.com/nightsense/office)
-- [plumber](https://github.com/nightsense/plumber)
-- [seagrey](https://github.com/nightsense/seagrey)
-- [strawberry](https://github.com/nightsense/strawberry)
-- [vrunchbang](https://github.com/nightsense/vrunchbang)
-- [wonka](https://github.com/nightsense/wonka)
+theme | screenshots
+:----:|:----------:
+[carbonized](https://github.com/nightsense/carbonized) | <img src="/img/screenshot-carbonized-dark.png" alt="screenshot of the carbonized-dark vim theme" width="144" /><img src="/img/screenshot-carbonized-light.png" alt="screenshot of the carbonized-light vim theme" width="144" />
+[forgotten](https://github.com/nightsense/forgotten)   |
+[nemo](https://github.com/nightsense/nemo)             |
+[office](https://github.com/nightsense/office)         |
+[plumber](https://github.com/nightsense/plumber)       |
+[seagrey](https://github.com/nightsense/seagrey)       |
+[strawberry](https://github.com/nightsense/strawberry) |
+[vrunchbang](https://github.com/nightsense/vrunchbang) |
+[wonka](https://github.com/nightsense/wonka)           |
 
 Each theme above comes in two variants, dark and light. nightshell, which is simply a collection of scripts (one per theme+variant), is the easiest way to activate one of these themes in the terminal. Instead of a theme configuration file, the theme is activated on startup by having one's shell configuration (e.g. `bashrc`) source the appropriate nightshell script.
 
