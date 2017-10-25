@@ -61,7 +61,7 @@ if status --is-interactive; sh ~/.nightshell/THEME; end
 
 ...replacing `THEME` with the desired colourscheme (e.g. `sh ~/.nightshell/carbonized-light`).
 
-## step 3 (optional) - dircolors
+## optional step - dircolors
 
 `dircolors` is essentially a colourscheme for the `ls` command, defining which colours are used for distinguishing filetypes.  To use nightshell's custom version of `dircolors`:
 
@@ -102,12 +102,26 @@ eval (dircolors -c ~/.nightshell/dircolors)
 > - **archive files** are **purple**, since purple is the colour of famous dyes made from sea snails, which are happily packed into shells (until someone decides to make dye out of them)
 > - **multimedia files** are **blue**, since blue conveys calm, enduring stability (like the sea and sky), just like the great works of art (images, music, video) we can rely on
 
-## step 4 (optional) - fish shell theme
+## optional step - fish shell theme
 
 The custom nightshell **fish** theme can be activated by adding the following to `~/.config/fish/config.fish`:
 
 ```
 source ~/.nightshell/fish
+```
+
+## optional step - base16-shell integration
+
+If you already use [Base16 Shell](https://github.com/chriskempson/base16-shell), you can make it aware of nightshell themes with the following command:
+
+```
+bash -c 'for f in ~/.nightshell/*-*; do ln -s $f $(echo $f.sh | sed "s#nightshell/#config/base16-shell/scripts/base16-nightshell-#"); done'
+```
+
+To undo the above command:
+
+```
+bash -c 'for f in $(find ~/.config/base16-shell/scripts -name "*nightshell*"); do rm $f; done'
 ```
 
 ## terminal vim
