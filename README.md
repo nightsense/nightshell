@@ -115,7 +115,9 @@ source ~/.nightshell/fish
 If you already use [Base16 Shell](https://github.com/chriskempson/base16-shell), you can make it aware of nightshell themes with the following command:
 
 ```
-bash -c 'for f in ~/.nightshell/*-*; do ln -s $f $(echo $f.sh | sed "s#nightshell/#config/base16-shell/scripts/base16-nightshell-#"); done'
+bash -c 'for f in ~/.nightshell/*-*; do
+  ln -s $f $(echo $f.sh | sed "s#nightshell/#config/base16-shell/scripts/base16-nightshell-#")
+done'
 ```
 
 To undo the above command:
