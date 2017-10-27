@@ -5,45 +5,45 @@
 
 # linux console
 if [ "${TERM%%-*}" = 'linux' ]; then
-  echo -e "\e]P0fffceb"
-  echo -e "\e]P1eb493a"
-  echo -e "\e]P2349e3d"
-  echo -e "\e]P3d4b935"
-  echo -e "\e]P43f8abf"
-  echo -e "\e]P59c69b5"
-  echo -e "\e]P6289e8b"
-  echo -e "\e]P7545451"
-  echo -e "\e]P8949288"
-  echo -e "\e]P9e07426"
-  echo -e "\e]PAe0ddce"
-  echo -e "\e]PBbfbdb0"
-  echo -e "\e]PC75746c"
+  echo -e "\e]P0fff8eb"
+  echo -e "\e]P1e04a4a"
+  echo -e "\e]P2349e42"
+  echo -e "\e]P3d4ac35"
+  echo -e "\e]P43f90bf"
+  echo -e "\e]P59969b5"
+  echo -e "\e]P6289e8e"
+  echo -e "\e]P7545351"
+  echo -e "\e]P8949088"
+  echo -e "\e]P9e07538"
+  echo -e "\e]PAe0d9ce"
+  echo -e "\e]PBbfbab0"
+  echo -e "\e]PC75726c"
   echo -e "\e]PD403f3d"
-  echo -e "\e]PEc96587"
+  echo -e "\e]PEd46a85"
   echo -e "\e]PF2b2b2b"
   echo -e "\e[H"
   echo -e "\e[2J"
   exit 0
 fi
 
-color00="ff/fc/eb" # Base 00 - Black
-color01="eb/49/3a" # Base 08 - Red
-color02="34/9e/3d" # Base 0B - Green
-color03="d4/b9/35" # Base 0A - Yellow
-color04="3f/8a/bf" # Base 0D - Blue
-color05="9c/69/b5" # Base 0E - Magenta
-color06="28/9e/8b" # Base 0C - Cyan
-color07="54/54/51" # Base 05 - White
-color08="94/92/88" # Base 03 - Bright Black
-color09="e0/74/26" # Base 09
-color10="e0/dd/ce" # Base 01
-color11="bf/bd/b0" # Base 02
-color12="75/74/6c" # Base 04
+color00="ff/f8/eb" # Base 00 - Black
+color01="e0/4a/4a" # Base 08 - Red
+color02="34/9e/42" # Base 0B - Green
+color03="d4/ac/35" # Base 0A - Yellow
+color04="3f/90/bf" # Base 0D - Blue
+color05="99/69/b5" # Base 0E - Magenta
+color06="28/9e/8e" # Base 0C - Cyan
+color07="54/53/51" # Base 05 - White
+color08="94/90/88" # Base 03 - Bright Black
+color09="e0/75/38" # Base 09
+color10="e0/d9/ce" # Base 01
+color11="bf/ba/b0" # Base 02
+color12="75/72/6c" # Base 04
 color13="40/3f/3d" # Base 06
-color14="c9/65/87" # Base 0F
+color14="d4/6a/85" # Base 0F
 color15="2b/2b/2b" # Base 07 - Bright White
-color_foreground="54/54/51" # Base 05
-color_background="ff/fc/eb" # Base 00
+color_foreground="54/53/51" # Base 05
+color_background="ff/f8/eb" # Base 00
 
 if [ -n "$TMUX" ]; then
   # Tell tmux to pass the escape sequences through
@@ -83,13 +83,13 @@ printf $printf_template 15 $color15
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  printf $printf_template_custom Pg 545451 # foreground
-  printf $printf_template_custom Ph fffceb # background
-  printf $printf_template_custom Pi 545451 # bold color
-  printf $printf_template_custom Pj 949288 # selection color
+  printf $printf_template_custom Pg 545351 # foreground
+  printf $printf_template_custom Ph fff8eb # background
+  printf $printf_template_custom Pi 545351 # bold color
+  printf $printf_template_custom Pj 949088 # selection color
   printf $printf_template_custom Pk 403f3d # selected text color
-  printf $printf_template_custom Pl e07426 # cursor
-  printf $printf_template_custom Pm fffceb # cursor text
+  printf $printf_template_custom Pl e07538 # cursor
+  printf $printf_template_custom Pm fff8eb # cursor text
 else
   printf $printf_template_var 10 $color_foreground
   printf $printf_template_var 11 $color_background
