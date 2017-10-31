@@ -7,11 +7,11 @@
 if [ "${TERM%%-*}" = 'linux' ]; then
   echo -e "\e]P0fffef5"
   echo -e "\e]P1e04a4a"
-  echo -e "\e]P2349e42"
+  echo -e "\e]P2349e34"
   echo -e "\e]P3d4ac35"
   echo -e "\e]P43f90bf"
   echo -e "\e]P59969b5"
-  echo -e "\e]P6289e8e"
+  echo -e "\e]P6289e81"
   echo -e "\e]P76b6a62"
   echo -e "\e]P8949288"
   echo -e "\e]P9e07538"
@@ -28,11 +28,11 @@ fi
 
 color00="ff/fe/f5" # Base 00 - Black
 color01="e0/4a/4a" # Base 08 - Red
-color02="34/9e/42" # Base 0B - Green
+color02="34/9e/34" # Base 0B - Green
 color03="d4/ac/35" # Base 0A - Yellow
 color04="3f/90/bf" # Base 0D - Blue
 color05="99/69/b5" # Base 0E - Magenta
-color06="28/9e/8e" # Base 0C - Cyan
+color06="28/9e/81" # Base 0C - Cyan
 color07="6b/6a/62" # Base 05 - White
 color08="94/92/88" # Base 03 - Bright Black
 color09="e0/75/38" # Base 09
