@@ -12,11 +12,11 @@ if [ "${TERM%%-*}" = 'linux' ]; then
   echo -e "\e]P4468dd4"
   echo -e "\e]P5a26fbf"
   echo -e "\e]P61b9e9e"
-  echo -e "\e]P740466b"
+  echo -e "\e]P7383e61"
   echo -e "\e]P87b7e94"
   echo -e "\e]P9e06a26"
   echo -e "\e]PAbabfe0"
-  echo -e "\e]PB83879e"
+  echo -e "\e]PB8e92ab"
   echo -e "\e]PC616475"
   echo -e "\e]PD252940"
   echo -e "\e]PEd46a84"
@@ -33,16 +33,16 @@ color03="d4/ac/35" # Base 0A - Yellow
 color04="46/8d/d4" # Base 0D - Blue
 color05="a2/6f/bf" # Base 0E - Magenta
 color06="1b/9e/9e" # Base 0C - Cyan
-color07="40/46/6b" # Base 05 - White
+color07="38/3e/61" # Base 05 - White
 color08="7b/7e/94" # Base 03 - Bright Black
 color09="e0/6a/26" # Base 09
 color10="ba/bf/e0" # Base 01
-color11="83/87/9e" # Base 02
+color11="8e/92/ab" # Base 02
 color12="61/64/75" # Base 04
 color13="25/29/40" # Base 06
 color14="d4/6a/84" # Base 0F
 color15="16/18/2b" # Base 07 - Bright White
-color_foreground="40/46/6b" # Base 05
+color_foreground="38/3e/61" # Base 05
 color_background="eb/ee/ff" # Base 00
 
 if [ -n "$TMUX" ]; then
@@ -83,9 +83,9 @@ printf $printf_template 15 $color15
 # foreground / background / cursor color
 if [ -n "$ITERM_SESSION_ID" ]; then
   # iTerm2 proprietary escape codes
-  printf $printf_template_custom Pg 40466b # foreground
+  printf $printf_template_custom Pg 383e61 # foreground
   printf $printf_template_custom Ph ebeeff # background
-  printf $printf_template_custom Pi 40466b # bold color
+  printf $printf_template_custom Pi 383e61 # bold color
   printf $printf_template_custom Pj 7b7e94 # selection color
   printf $printf_template_custom Pk 252940 # selected text color
   printf $printf_template_custom Pl 7b7e94 # cursor
