@@ -1,3 +1,11 @@
+**This repository has been superseded by [vimspectr](https://github.com/nightsense/vimspectr).**
+
+.
+
+.
+
+.
+
 # nightshell
 
 **Terminal theme setter** for the "nightsense theme family". Namely:
